@@ -3,8 +3,8 @@ import time
 def session1():
   print("Are you sure you want to vote for John Doe?")
   votevar = input("Y/N: ")
-  if votevar() == "Y"
-  print("Thank you for voting for John Doe")
+  if votevar == "Y":
+    print("Thank you for voting for John Doe")
 def session2():
   print("Are you sure you want to vote for Jane Smith?")
   input("Y/N: ")
