@@ -1,8 +1,14 @@
+
 import time
 def session1():
   print("Are you sure you want to vote for John Doe?")
   input("Y/N: ")
- 
+def session2():
+  print("Are you sure you want to vote for Jane Smith?")
+  input("Y/N: ")
+def session3():
+  print("Are you sure you want to vote for Sirhan Sirhan?")
+  input("Y/N: ")
 print("Type in 1 for John Doe, 2 for Jane Smith, and 3 for Sirhan Sirhan")
 vote = input("Who do you want to vote for?")
 time.sleep(1)
@@ -12,5 +18,5 @@ if vote == '2':
   session2()
 if vote == '3':
   session3()
-if vote == '4':
+if vote == '-12':
   print("BOBBY IS AWESOME!")
