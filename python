@@ -1,10 +1,12 @@
 import time
-def session():
-  print("Are you sure you want to vote for John Doe")
+def session1():
+  print("Are you sure you want to vote for John Doe?")
+  input("Y/N: ")
+ 
 print("Type in 1 for John Doe, 2 for Jane Smith, and 3 for Sirhan Sirhan")
 vote = input("Who do you want to vote for?")
 jon = 1
 jane = 2
 sir = 3
-if vote = jon:
-  session()
+if vote == jon:
+  session1()
