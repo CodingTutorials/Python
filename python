@@ -1,1 +1,10 @@
-
+import time
+def yesjon():
+  print("Are you sure you want to vote for John Doe")
+print("Type in 1 for John Doe, 2 for Jane Smith, and 3 for Sirhan Sirhan")
+votenum = input("Who do you want to vote for?")
+jon = 1
+jane = 2
+sir = 3
+if votenum = jon:
+  yesjon()
