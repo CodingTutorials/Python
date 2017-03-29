@@ -7,11 +7,15 @@ def session1():
     print("Thank you for voting for John Doe")
 def session2():
   print("Are you sure you want to vote for Jane Smith?")
-  input("Y/N: ")
+  votevar = input("Y/N: ")
+   if votevar == "Y":
+    print("Thank you for voting for Jane Smith")
 def session3():
   print("Are you sure you want to vote for Sirhan Sirhan?")
-  input("Y/N: ")
-print("Type in 1 for John Doe, 2 for Jane Smith, and 3 for Sirhan Sirhan")
+  votevar = input("Y/N: ")
+   if votevar == "Y":
+    print("Thank you for voting for John Doe")
+print("Type in John Doe, Jane Smith,or Sirhan Sirhan")
 vote = input("Who do you want to vote for?")
 time.sleep(1)
 if vote == '1':
