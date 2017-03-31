@@ -1,4 +1,4 @@
-
+# Change the voting system
 import time
 def session1():
   print("Are you sure you want to vote for John Doe?")
