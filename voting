@@ -1,15 +1,21 @@
 # Change the voting system
 import time
+jon = 0
+jan = 0
+sir = 0
 def session1():
   print("Are you sure you want to vote for John Doe?")
   votevar = input("Y/N: ")
   if votevar == "Y":
+    time.sleep(1)
     print("Thank you for voting for John Doe")
+    jon = jon + 1
 def session2():
   print("Are you sure you want to vote for Jane Smith?")
   votevar = input("Y/N: ")
    if votevar == "Y":
     print("Thank you for voting for Jane Smith")
+    jan = jan + 1
 def session3():
   print("Are you sure you want to vote for Sirhan Sirhan?")
   votevar = input("Y/N: ")
