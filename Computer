@@ -24,10 +24,10 @@ if Username == "USER" and Password == "PASS":
         print("Loading...")
         Computer_help += 1
         sleep(1.0)
-        if Computer_help == 5:
+        if Computer_help == 4:
             Computer = 2
         while Computer == 2:
-            print("Enter Internet or Home")
+            print("Enter Internet")
             inp = input() 
             if inp == "Internet":
                 Internet_help = 1
@@ -36,26 +36,31 @@ if Username == "USER" and Password == "PASS":
                 while Searchingin == 0:
                     if Computer == 3:
                          if inp == "Internet":
+                             sleep(1.0)
                              print("What do you want to search for?")
                              Searching = input()
                              print("Searching for : "+Searching)
                          if Searching == "Google":
                              sleep(1.0)
                              print("Going to Google")
-                             Searchingin = 1
+                             Searchingin = 0
                          elif Searching == "List":
                              sleep(1.0)
-                             print("Google, Minecraft, Gmail")
+                             print("Google, Minecraft, Gmail, Shut Down")
+                             Searchingin = 0
+                         elif Searching == "Shut Down":
+                             sleep(1.0)
+                             print("Shutting Down")
                              Searchingin = 1
                          elif Searching == "Minecraft":
                              sleep(1.0)
                              print("Opening Minecraft")
-                             Searchingin = 1
+                             Searchingin = 0
                          elif Searching == "Gmail":
                              sleep(1.0)
                              print("Opening gmail")
                              gmail = 1
-                             Searchingin = 1
+                             Searchingin = 0
                              if gmail == 1:
                                 sleep(1.0)
                                 print("Enter Send or check")
@@ -74,9 +79,7 @@ if Username == "USER" and Password == "PASS":
                            Searchinginput = input()
                            if Searchingin == "No results found, click enter to try again":
                                  Searchingin = 0
-            elif inp == "Home":
-               print("Opening Home")
-               Searchingin = 1    
-                         # Adding More Here
-                         
+                while Searchingin == 1:
+                  print("Shutting Down")
+                  Searchingin = 0
                          
