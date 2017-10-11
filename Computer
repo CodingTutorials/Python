@@ -40,16 +40,20 @@ if Username == "USER" and Password == "PASS":
                              Searching = input()
                              print("Searching for : "+Searching)
                          if Searching == "Google":
+                             sleep(1.0)
                              print("Going to Google")
                              Searchingin = 1
                          elif Searching == "Minecraft":
+                             sleep(1.0)
                              print("Opening Minecraft")
                              Searchingin = 1
                          elif Searching == "gmail":
+                             sleep(1.0)
                              print("Opening gmail")
                              gmail = 1
                              Searchingin = 1
                              if gmail == 1:
+                                sleep(1.0)
                                 print("Send or check")
                                 gmail = input()
                                 if gmail == "Send":
