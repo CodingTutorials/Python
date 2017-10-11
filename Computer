@@ -27,7 +27,7 @@ if Username == "USER" and Password == "PASS":
         if Computer_help == 5:
             Computer = 2
         while Computer == 2:
-            print("What do you want Internet or Home?")
+            print("Enter Internet or Home")
             inp = input() 
             if inp == "Internet":
                 Internet_help = 1
@@ -54,7 +54,7 @@ if Username == "USER" and Password == "PASS":
                              Searchingin = 1
                              if gmail == 1:
                                 sleep(1.0)
-                                print("Send or check")
+                                print("Enter Send or check")
                                 gmail = input()
                                 if gmail == "Send":
                                     print("What's email?")
@@ -69,7 +69,8 @@ if Username == "USER" and Password == "PASS":
                              Searchingin = 1    
                          # Adding More Here
                          else:
-                             print("Try again")
+                             sleep(1.0)
+                             print("No results found, click enter to try again")
                              Searchinginput = input()
-                             if Searchingin == "Try again":
+                             if Searchingin == "No results found, click enter to try again":
                                  Searchingin = 0
