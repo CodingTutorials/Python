@@ -18,7 +18,7 @@ If you want an integer, add a space and put a number.
 Hello = 1
 ```
 
-If you want a string, put the string in between a pair of quotation marks
+If you want a string, put the string in between a pair of quotation marks.
 
 ```python
 Hello = "Variable"
