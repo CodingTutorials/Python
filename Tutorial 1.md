@@ -2,25 +2,25 @@
 
 ## Variables
 
-Write a string.
+Write a string (This can be any combination of letters).
 
 ```python
 Hello 
 ```
 
-Then add an equal sign.
+Then add a space and an equal sign.
 
 ```python
 Hello = 
 ```
 
-After that put an integer or a string.
+If you want an integer, add a space and put a number.
 
 ```python
 Hello = 1
 ```
 
-If you want to do a string, put the string in between a pair of quotation marks
+If you want a string, put the string in between a pair of quotation marks
 
 ```python
 Hello = "Variable"
