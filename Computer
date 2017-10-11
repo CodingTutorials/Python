@@ -43,11 +43,15 @@ if Username == "USER" and Password == "PASS":
                              sleep(1.0)
                              print("Going to Google")
                              Searchingin = 1
+                         elif Searching == "List":
+                             sleep(1.0)
+                             print("Google, Minecraft, Gmail")
+                             Searchingin = 1
                          elif Searching == "Minecraft":
                              sleep(1.0)
                              print("Opening Minecraft")
                              Searchingin = 1
-                         elif Searching == "gmail":
+                         elif Searching == "Gmail":
                              sleep(1.0)
                              print("Opening gmail")
                              gmail = 1
@@ -64,13 +68,15 @@ if Username == "USER" and Password == "PASS":
                                     print("What's message")
                                     whatsmessage = input()
                                     print ("Sending to:",whatsemail,"Name is:",whatsname,"Message:",whatsmessage)
-                         elif Searching == "Home":
-                             print("Opening Home")
-                             Searchingin = 1    
-                         # Adding More Here
                          else:
-                             sleep(1.0)
-                             print("No results found, click enter to try again")
-                             Searchinginput = input()
-                             if Searchingin == "No results found, click enter to try again":
+                           sleep(1.0)
+                           print("No results found, click enter to try again")
+                           Searchinginput = input()
+                           if Searchingin == "No results found, click enter to try again":
                                  Searchingin = 0
+            elif inp == "Home":
+               print("Opening Home")
+               Searchingin = 1    
+                         # Adding More Here
+                         
+                         
