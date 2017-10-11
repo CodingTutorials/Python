@@ -17,6 +17,7 @@ if Username == "USER" and Password == "PASS":
     print("Starting Computer")
     sleep(1.0)
     print("Loading...")
+    sleep(1.0)
     Computer = 1
     Computer_help = 0
     while Computer == 1:
