@@ -27,6 +27,5 @@ print("")
 If you want to print text and then a variable, add quotation marks and add a comma and a variable.
 
 ```python
-Variable = 1
 print("Variable =",Variable)
 ```
