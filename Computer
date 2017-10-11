@@ -4,7 +4,7 @@ Username = ""
 Password = ""
 attempts = 0
 
-while Username != "NJR4" or Password != "NJR4":
+while Username != "User" or Password != "Pass":
   if attempts >0:
     print ("Wrong username or password")
   attempts += 1
