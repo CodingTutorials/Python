@@ -24,7 +24,7 @@ if Username == "USER" and Password == "PASS":
         print("Loading...")
         Computer_help += 1
         sleep(1.0)
-        if Computer_help == 9:
+        if Computer_help == 5:
             Computer = 2
         while Computer == 2:
             print("What do you want Internet or Home?")
