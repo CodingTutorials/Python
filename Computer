@@ -4,7 +4,7 @@ Username = ""
 Password = ""
 attempts = 0
 
-while Username != "User" or Password != "Pass":
+while Username != "USER" or Password != "PASS":
   if attempts >0:
     print ("Wrong username or password")
   attempts += 1
@@ -13,7 +13,7 @@ while Username != "User" or Password != "Pass":
   print("Whats Password?")
   Password = input()
 
-if Username == "NJR4" and Password == "NJR4":
+if Username == "USER" and Password == "PASS":
     print("Starting Computer")
     sleep(1.0)
     print("Loading...")
