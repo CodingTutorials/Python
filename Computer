@@ -56,7 +56,7 @@ if Username == "USER" and Password == "PASS":
                                     whatsemail = input()
                                     print("What's name?")
                                     whatsname = input()
-                                    print("what's message")
+                                    print("What's message")
                                     whatsmessage = input()
                                     print "Sending to:",whatsemail,"Name is:",whatsname,"Message:",whatsmessage
                          elif Searching == "Home":
