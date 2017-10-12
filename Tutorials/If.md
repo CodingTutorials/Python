@@ -49,3 +49,30 @@ Run:
 ```
 You have 1 apples
 ```
+
+### Example 2:
+```python
+apples = "alot"
+if apples == "alot":
+  print("You have",apples,"apples")
+```
+Run:
+```
+You have alot apples
+```
+
+
+### Example 3:
+```python
+apples = 1
+if apples == 1:
+  print("You have",apples,"apples")
+apples = 2
+if apples == 2:
+  print("You have",apples,"apples")
+```
+Run:
+```
+You have 1 apples
+You have 2 apples
+```
