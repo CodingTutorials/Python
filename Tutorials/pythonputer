@@ -32,20 +32,28 @@ def ifguest():
     
 def admin():
   if user == "admin":
-    if pass == "admin":
+    if passw == "admin":
       print("Logging in succedded")
       adminuser()
 def adminuser():
   print("Welcome back, Administrator!")
 
-
 def user1():
+  if user == "yascalawag123":
+    if passw == "breh":
+      print("Welcome back, yalandlubber27!")
   
 
 
-
-
-
+start()
+starting()
+chlog()
+guest()
+login()
+ifguest()
+admin()
+adminuser()
+user1()
 
 
 
