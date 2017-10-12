@@ -18,7 +18,7 @@ After that, add two equal signs.
 if apples ==
 ```
 
-If you want it equal to a integer, add a space and the integer. After that, put a colon. If you want to view the variable tutorial, click [here](https://github.com/codingtutorials/Python/blob/master/Tutorials/Variables.md)
+If you want it equal to a integer, add a space and the integer. If you want it less than or equal to, add the appropriate signs. After that, put a colon. If you want to view the variable tutorial, click [here](https://github.com/codingtutorials/Python/blob/master/Tutorials/Variables.md)
 
 ```python
 if apples == 1:
@@ -75,4 +75,23 @@ Run:
 ```
 You have 1 apples
 You have 2 apples
+```
+
+## Example 4:
+```python
+apples = 1
+if apples == 1:
+  print("You have",apples,"apples")
+  apples = 2
+if apples == 2:
+  print("You have",apples,"apples")
+  apples += 1
+if apples == 3:
+  print("You have",apples,"apples")
+```
+Run:
+```
+You have 1 apples
+You have 2 apples
+You have 3 apples
 ```
