@@ -23,3 +23,14 @@ If you want a string, put the string in between a pair of quotation marks.
 ```python
 Hello = "Variable"
 ```
+
+## Examples
+
+### Example 1:
+```python
+dollars = 100
+```
+### Example 2:
+```python
+dollars = "none"
+```
