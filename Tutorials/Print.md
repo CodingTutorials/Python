@@ -38,7 +38,7 @@ var = 1
 print(var)
 ```
 Run:
-```python
+```
 1
 ```
 
@@ -48,7 +48,7 @@ var = "Surprise"
 print(var)
 ```
 Run:
-```python
+```
 Surprise
 ```
 
@@ -58,7 +58,7 @@ var = 1
 print("Var equals",var)
 ```
 Run:
-```python
+```
 Var equals 1
 ```
 
@@ -68,6 +68,6 @@ var = "Surprise"
 print("Var equals",var)
 ```
 Run:
-```python
+```
 Var equals Surprise
 ```
