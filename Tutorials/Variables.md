@@ -17,7 +17,10 @@ If you want an integer, add a space and put a number.
 ```python
 Hello = 1
 ```
-
+If you want the integer go up by a number, add a plus before the equals.
+```python
+Hello += 1
+```
 If you want a string, put the string in between a pair of quotation marks.
 
 ```python
