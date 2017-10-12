@@ -30,9 +30,22 @@ If you want it equal to a string, add a pair of parenthesis and inside it, put a
 if apples == "alot":
 ```
 
-Next, press enter and press tab. Also, put any print code. If you want to view the printing tutorial, click [here](https://github.com/codingtutorials/Python/blob/master/Tutorials/Print.md)
+Next, press enter and press tab. After that, put any code. In this case, I will put a print line. If you want to view the printing tutorial, click [here](https://github.com/codingtutorials/Python/blob/master/Tutorials/Print.md)
 
 ```python
 if apples == "alot":
   print("You have",apples,"apples")
+```
+
+## Examples
+
+### Example 1:
+```python
+apples = 1
+if apples == 1:
+  print("You have",apples,"apples")
+```
+Run:
+```
+You have 1 apples
 ```
