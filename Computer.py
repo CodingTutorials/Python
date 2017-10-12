@@ -36,7 +36,6 @@ if Username == "USER" and Password == "PASS":
                 while Searchingin == 0:
                     if Computer == 3:
                          if inp == "Internet":
-                             sleep(1.0)
                              print("What do you want to search for?")
                              Searching = input()
                              print("Searching for : "+Searching)
