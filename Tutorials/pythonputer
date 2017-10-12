@@ -7,4 +7,5 @@ if start == "y":
   print("Starting computer")
   time.sleep(3)
   print("LOADING...")
+  time.sleep(5)
   
