@@ -1,4 +1,4 @@
-## Print
+# Print
 
 Write "print".
 
@@ -28,4 +28,46 @@ If you want to print text and then a variable, add quotation marks and add a com
 
 ```python
 print("Variable =",Variable)
+```
+
+## Examples
+
+### Example 1:
+```python
+var = 1
+print(var)
+```
+Run:
+```python
+1
+```
+
+### Example 2:
+```python
+var = "Surprise"
+print(var)
+```
+Run:
+```python
+Surprise
+```
+
+### Example 3:
+```python
+var = 1
+print("Var equals",var)
+```
+Run:
+```python
+Var equals 1
+```
+
+### Example 4:
+```python
+var = "Surprise"
+print("Var equals",var)
+```
+Run:
+```python
+Var equals Surprise
 ```
