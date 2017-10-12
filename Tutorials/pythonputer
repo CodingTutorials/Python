@@ -24,7 +24,7 @@ def login():
   print("To continue, you must authenticate yourself. Please type in your username and password.")
   print("If you would like to go back, type in [back] for the username.")
   user = input("Username:")
-  pass = input("Pass:")
+  passw = input("Pass:")
 
 def ifguest():
   if user == "back":
@@ -34,3 +34,93 @@ def admin():
   if user == "admin":
     if pass == "admin":
       print("Logging in succedded")
+      adminuser()
+def adminuser():
+  print("Welcome back, Administrator!")
+
+
+def user1():
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
