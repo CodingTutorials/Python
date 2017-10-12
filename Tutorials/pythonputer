@@ -1,11 +1,36 @@
 import time
+import random
 
 
-print("Would you like to start your computer?")
-start = input("y/n:")
-if start == "y":
-  print("Starting computer")
-  time.sleep(3)
-  print("LOADING...")
-  time.sleep(5)
+
+def start():
+  print("Do you want to start your computer?")
+  choosest = input("y/n:")
+
+def starting():
+  if choosest == "y":
+    print("Starting")
+    time.sleep(5)
+    
+def chlog():
+  print("Do you want to log in or continue as guest?")
+  chlogg = input("[1]log in/[2]guest:")
   
+def guest():
+  print("Loggint in as guest...")
+  
+  
+def login():
+  print("To continue, you must authenticate yourself. Please type in your username and password.")
+  print("If you would like to go back, type in [back] for the username.")
+  user = input("Username:")
+  pass = input("Pass:")
+
+def ifguest():
+  if user == "back":
+    chlog()
+    
+def admin():
+  if user == "admin":
+    if pass == "admin":
+      print("Logging in succedded")
