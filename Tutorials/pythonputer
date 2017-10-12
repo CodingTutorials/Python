@@ -1,0 +1,10 @@
+import time
+
+
+print("Would you like to start your computer?")
+start = input("y/n:")
+if start == "y":
+  print("Starting computer")
+  time.sleep(3)
+  print("LOADING...")
+  
