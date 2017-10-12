@@ -33,7 +33,14 @@ Hello = "Variable"
 ```python
 dollars = 100
 ```
+
 ### Example 2:
 ```python
 dollars = "none"
+```
+
+### Example 3:
+```python
+dollars = 1
+dollars += 1
 ```
