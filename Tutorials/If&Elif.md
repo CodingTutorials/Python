@@ -37,6 +37,7 @@ if apples == "alot":
   print("You have",apples,"apples")
 ```
 
+
 ## Examples
 
 ### Example 1:
