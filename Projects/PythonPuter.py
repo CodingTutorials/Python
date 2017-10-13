@@ -45,25 +45,35 @@ if Username == "ADMIN" and Password == "ADMIN":
   
   # Opening Apps
   while appopen == 0:
+    sleep(0.2)
     print("What application do you want to open?")
     app = input()
     
     # Chrome
     if app == "email":
       print("Opening Email")
+      sleep(0.2)
+      print("Send or Check")
       emailchoice = input()
       if emailchoice == "send":
-        print("What email address?")
-        emailaddress = input()
+        print("What Email Address?")
+        emailaddress = input("Email:")
+        print("What Subject?")
+        emailsubject = input("Subject:")
+        print("What Message")
+        emailmessage = input("Message:")
+        print ("Sending to:",emailaddress,"Subject:",emailsubject,"Message:",emailmessage)
       appopen = 1
       
     # Application not found  
     else:
       print("Application not found")
+      sleep(0.2)
       appopen = 0
       
     # Application closed
     if appopen == 1:
       print("Application Closed")
+      sleep(0.2)
       appopen =  0
       
