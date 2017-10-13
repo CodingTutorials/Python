@@ -52,7 +52,7 @@ if Username == "ADMIN" and Password == "ADMIN":
     if app == "email":
       print("Opening Email")
       emailchoice = input()
-      if emailchoice == "send"
+      if emailchoice == "send":
         print("What email address?")
         emailaddress = input()
       appopen = 1
