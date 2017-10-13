@@ -6,3 +6,5 @@ My discord info is on my github profile page.
   * Python (https://www.python.org)
   * Repl.it (https://repl.it/languages/python3)
   * Trinket (https://trinket.io)
+## Contact
+Dicord: https://discord.gg/AX8rCaa
