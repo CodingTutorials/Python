@@ -1,6 +1,6 @@
 # Python
 ## Helping
-If you want to edit tutorials, message me (@Mosrod) on discord.
+If you want to edit tutorials, message me ( @Mosrod ) on discord.
 My discord info is on my github profile page.
 ## Compilers
   * Python (https://www.python.org)
