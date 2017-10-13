@@ -7,7 +7,7 @@ login = 0
 Username = 0
 Password = 0
 startcomputer = 0
-
+appopen = 0
 # Start Computer
 print("Do you want to start the computer?")
 startcomputer = input("[y]/[n]:")
@@ -41,3 +41,29 @@ while Username != "ADMIN" or Password !="ADMIN":
 # Correct Login Check
 if Username == "ADMIN" and Password == "ADMIN":
   print("Successfully Logged In")
+  sleep(0.2)
+  
+  # Opening Apps
+  while appopen == 0:
+    print("What application do you want to open?")
+    app = input()
+    
+    # Chrome
+    if app == "email":
+      print("Opening Email")
+      emailchoice = input()
+      if emailchoice == "send"
+        print("What email address?")
+        emailaddress = input()
+      appopen = 1
+      
+    # Application not found  
+    else:
+      print("Application not found")
+      appopen = 0
+      
+    # Application closed
+    if appopen == 1:
+      print("Application Closed")
+      appopen =  0
+      
