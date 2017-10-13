@@ -2,6 +2,11 @@ from time import sleep
 import sys
 import random
 
+# Variables
+login = 0
+Username = 0
+Password = 0
+startcomputer = 0
 # Start Computer
 
 print("Do you want to start the computer?")
@@ -12,14 +17,17 @@ if startcomputer == "y":
     sys.stdout.write(character)
     sleep(0.2)
   login = 1
+
 if startcomputer == "n":
   print("Shutting Down")
+  quit()
+
 # Login
 if login == 1:
   print("\n" * 1)
   print("Starting Computer")
-  Username = input("Username: ")
-  Password = input("Password: ")
+  Username = input("Username:")
+  Password = input("Password:")
   
 # Login Check
 attempts = 1
