@@ -1,57 +1,30 @@
-import time
+from time import sleep
+import sys
 import random
 
+# Start Computer
 
+print("Do you want to start the compyter?")
+startcomputer = input("y/n:")
+if startcomputer == "y":
+  text = "Loading ..........."
+  for character in text:
+    sys.stdout.write(character)
+    sleep(0.2)
+  login = 1
 
-def start():
-  print("Do you want to start your computer?")
-  choosest = input("y/n:")
-
-def starting():
-  if choosest == "y":
-    print("Starting")
-    time.sleep(5)
-    
-def chlog():
-  print("Do you want to log in or continue as guest?")
-  chlogg = input("[1]log in/[2]guest:")
+# Login
+if login == 1:
+  print("\n" * 1)
+  print("Starting Computer")
+  Username = input("Username: ")
+  Password = input("Password: ")
   
-def guest():
-  print("Loggint in as guest...")
-  
-  
-def login():
-  print("To continue, you must authenticate yourself. Please type in your username and password.")
-  print("If you would like to go back, type in [back] for the username.")
-  user = input("Username:")
-  passw = input("Pass:")
-
-def ifguest():
-  if user == "back":
-    chlog()
-    
-def admin():
-  if user == "admin":
-    if passw == "admin":
-      print("Logging in succedded")
-      adminuser()
-def adminuser():
-  print("Welcome back, Administrator!")
-
-def user1():
-  if user == "yascalawag123":
-    if passw == "breh":
-      print("Welcome back, yalandlubber27!")
-  
-
-
-start()
-starting()
-chlog()
-guest()
-login()
-ifguest()
-admin()
-adminuser()
-user1()
-
+#Login Check
+attempts = 1
+while Username != "ADMIN" or Password !="ADMIN":
+  if attempts >0:
+    print("Wrong Username or Password")
+    attempts += 1
+    Username = input("Username: ")
+    Password = input("Password: ")
