@@ -49,7 +49,7 @@ if Username == "ADMIN" and Password == "ADMIN":
     print("What application do you want to open?")
     app = input()
     
-    # Chrome
+    # Email
     if app == "email":
       print("Opening Email")
       sleep(0.2)
