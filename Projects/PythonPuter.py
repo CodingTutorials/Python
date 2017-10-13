@@ -7,8 +7,8 @@ login = 0
 Username = 0
 Password = 0
 startcomputer = 0
-# Start Computer
 
+# Start Computer
 print("Do you want to start the computer?")
 startcomputer = input("[y]/[n]:")
 if startcomputer == "y":
@@ -26,10 +26,10 @@ if startcomputer == "n":
 if login == 1:
   print("\n" * 1)
   print("Starting Computer")
-  Username = input("Username:")
+  Username = input("Username:") 
   Password = input("Password:")
   
-# Login Check
+# Wrong Login Check
 attempts = 1
 while Username != "ADMIN" or Password !="ADMIN":
   if attempts >0:
@@ -37,3 +37,7 @@ while Username != "ADMIN" or Password !="ADMIN":
     attempts += 1
     Username = input("Username:")
     Password = input("Password:")
+
+# Correct Login Check
+if Username == "ADMIN" and Password == "ADMIN":
+  print("Successfully Logged In")
