@@ -7,4 +7,4 @@ My discord info is on my github profile page.
   * Repl.it (https://repl.it/languages/python3)
   * Trinket (https://trinket.io)
 ## Contact
-Dicord: https://discord.gg/AX8rCaa
+Discord: https://discord.gg/AX8rCaa
