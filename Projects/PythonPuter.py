@@ -63,6 +63,8 @@ if Username == "ADMIN" and Password == "ADMIN":
         print("What Message")
         emailmessage = input("Message:")
         print ("Sending to:",emailaddress,"Subject:",emailsubject,"Message:",emailmessage)
+      else:
+        print("Please Retry")
       appopen = 1
       
     # Application not found  
