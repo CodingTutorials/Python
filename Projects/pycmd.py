@@ -36,7 +36,7 @@ while cmd == 1:
       print(time.minute)
       cmd = 0
       
-  # Pass Gen
+  # Password Generat
   if command == "passgen":
     print("How many passwords do you want?")
     passgenamount = int(input("Passwords:"))  
@@ -75,6 +75,27 @@ while cmd == 1:
       print("You need to login")
       cmd = 0
   
+  # GitHub
+  if command == "github":
+    if admin == 1:
+      print("What do you want to search for?")
+      githubsearch = input("Search:")
+      print("Go to: https://github.com/search?utf8=%E2%9C%93&q=",githubsearch,"&type=", sep='')
+      cmd = 0
+    else:
+      print("You need to login")
+      cmd = 0
+  
+  # Google
+  if command == "google":
+    if admin == 1:
+      print("What do you want to search for?")
+      googlesearch = input("Search:")
+      print("https://www.google.com/search?&q=",googlesearch, sep = '')
+      cmd = 0
+    else:
+      print("You need to login")
+      cmd = 0
   # Command Finished
   if cmd == 0:
     print("Command Finished")
