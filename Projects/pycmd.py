@@ -4,7 +4,8 @@ import random
 import datetime
 # Variables
 cmd = 1
-
+username = 1
+password = 1
 # Command
 while cmd == 1:
   command = input("Command:")
@@ -23,6 +24,20 @@ while cmd == 1:
       print (random.randint(10000000,100000000))
     cmd = 0
     
+  # Login  
+  if command == "login":
+    if username == "admin" and password =="admin":
+      print("Already Logged In")
+      cmd = 0
+    if username != "admin" and password !="admin":
+      username = input("Username:")
+      password = input("Password:")
+      if username == "admin" and password == "admin":
+        print("Logged In Successfully")
+        cmd = 0
+      if username != "admin" and password !="admin":
+        print("Wrong Username or Password")
+        cmd = 0
   # Command Finished
   if cmd == 0:
     print("Command Executed")
