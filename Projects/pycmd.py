@@ -15,35 +15,6 @@ while cmd == 1:
     print("Please Login To Enable All Features")
   command = input("Command:")
   
-  # Time
-  if command == "time":
-    time = datetime.datetime.now()
-    print("Enter [y],[m],[d],[h],[min]")
-    timeformat = input("Time Format:")
-    if timeformat == "y":
-      print(time.year)
-      cmd = 0
-    if timeformat == "m":
-      print(time.month)
-      cmd = 0
-    if timeformat == "d":
-      print(time.day)
-      cmd = 0
-    if timeformat == "h":
-      print(time.hour)
-      cmd = 0
-    if timeformat == "min":
-      print(time.minute)
-      cmd = 0
-      
-  # Password Generat
-  if command == "passgen":
-    print("How many passwords do you want?")
-    passgenamount = int(input("Passwords:"))  
-    for x in range(passgenamount):
-      print (random.randint(10000000,100000000))
-    cmd = 0
-    
   # Login  
   if command == "login":
     if username == "admin" and password =="admin":
@@ -59,7 +30,44 @@ while cmd == 1:
       if username != "admin" and password !="admin":
         print("Wrong Username or Password")
         cmd = 0
-  
+        
+  # Time
+  if command == "time":
+    if admin == 1:
+      time = datetime.datetime.now()
+      print("Enter [y],[m],[d],[h],[min]")
+      timeformat = input("Time Format:")
+      if timeformat == "y":
+        print(time.year)
+        cmd = 0
+      if timeformat == "m":
+        print(time.month)
+        cmd = 0
+      if timeformat == "d":
+        print(time.day)
+        cmd = 0
+      if timeformat == "h":
+        print(time.hour)
+        cmd = 0
+      if timeformat == "min":
+        print(time.minute)
+        cmd = 0
+    else:
+      print("You need to login")
+      cmd = 0
+      
+  # Password Generater
+  if command == "passgen":
+    if admin == 1:
+      print("How many passwords do you want?")
+      passgenamount = int(input("Passwords:"))  
+      for x in range(passgenamount):
+        print (random.randint(10000000,100000000))
+      cmd = 0
+    else:
+      print("You need to login")
+      cmd = 0
+
   # Email
   if command == "email":
     if admin == 1:
