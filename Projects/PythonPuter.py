@@ -1,7 +1,8 @@
 from time import sleep
 import sys
 import random
-
+def destroy():
+  sys.exit()
 # Variables
 login = 0
 Username = 0
@@ -20,7 +21,7 @@ if startcomputer == "y":
 
 if startcomputer == "n":
   print("Shutting Down")
-  quit()
+  destroy()
 
 # Login
 if login == 1:
@@ -72,7 +73,16 @@ if Username == "admin" and Password == "pass":
       for x in range(passgenamount):
         print (random.randint(10000000,100000000))
       appopen =  1
-      
+    #log out
+    if app == "logout":
+      print("logging out...")
+      print("please wait...")
+      print("Woud you like to Shut Down?")
+      shutdown = input("[y]/[n]:")
+      if shutdown == "y":
+        quit()
+      else:
+        print("Error #256: No file to cancel shutdown")
     # Application not found  
     else:
       print("Application not found")
@@ -84,4 +94,3 @@ if Username == "admin" and Password == "pass":
       print("Application Closed")
       sleep(0.2)
       appopen =  0
-      
