@@ -6,6 +6,7 @@ import datetime
 cmd = 1
 username = 1
 password = 1
+admin = 0
 # Command
 while cmd == 1:
   command = input("Command:")
@@ -34,13 +35,14 @@ while cmd == 1:
       password = input("Password:")
       if username == "admin" and password == "admin":
         print("Logged In Successfully")
+        admin = 1
         cmd = 0
       if username != "admin" and password !="admin":
         print("Wrong Username or Password")
         cmd = 0
   # Command Finished
   if cmd == 0:
-    print("Command Executed")
+    print("Command Finished")
     cmd = 1
     
   # Command Not Found
