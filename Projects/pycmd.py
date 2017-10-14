@@ -14,9 +14,24 @@ while cmd == 1:
   # Time
   if command == "time":
     time = datetime.datetime.now()
-    print(time.year)
-    cmd = 0
-    
+    print("Enter [y],[m],[d],[h],[min]")
+    timeformat = input("Time Format:")
+    if timeformat == "y":
+      print(time.year)
+      cmd = 0
+    if timeformat == "m":
+      print(time.month)
+      cmd = 0
+    if timeformat == "d":
+      print(time.day)
+      cmd = 0
+    if timeformat == "h":
+      print(time.hour)
+      cmd = 0
+    if timeformat == "min":
+      print(time.minute)
+      cmd = 0
+      
   # Pass Gen
   if command == "passgen":
     print("How many passwords do you want?")
