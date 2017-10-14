@@ -72,7 +72,7 @@ while cmd == 1:
       print("Sent to:",address,"Subject:",subject,"Message:",message)
       cmd = 0
     else:
-      print("You need admin permission")
+      print("You need to login")
       cmd = 0
   
   # Command Finished
