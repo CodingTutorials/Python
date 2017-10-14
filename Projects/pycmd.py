@@ -15,6 +15,15 @@ while cmd == 1:
     print("Please Login To Enable All Features")
   command = input("Command:")
   
+  # Help
+  if command == "help":
+    if admin == 1:
+      print("Commands: time, passgen, email, github, google")
+      cmd = 0
+    else:
+      print("Login by typing login")
+      cmd = 0
+      
   # Login  
   if command == "login":
     if username == "admin" and password =="admin":
