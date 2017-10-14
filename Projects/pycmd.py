@@ -21,8 +21,11 @@ while cmd == 1:
     for x in range(passgenamount):
       print (random.randint(10000000,100000000))
     cmd = 0
+  # Command Finished
   if cmd == 0:
     print("Command Executed")
     cmd = 1
+    
+  # Command Not Found
   else:
     print(command,"is not a command")
