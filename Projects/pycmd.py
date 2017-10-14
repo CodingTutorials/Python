@@ -14,6 +14,7 @@ while cmd == 1:
     time = datetime.datetime.now()
     print(time.year)
     cmd = 0
+    
   # Pass Gen
   if command == "passgen":
     print("How many passwords do you want?")
@@ -21,6 +22,7 @@ while cmd == 1:
     for x in range(passgenamount):
       print (random.randint(10000000,100000000))
     cmd = 0
+    
   # Command Finished
   if cmd == 0:
     print("Command Executed")
