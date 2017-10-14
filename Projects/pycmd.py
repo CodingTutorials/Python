@@ -55,6 +55,22 @@ while cmd == 1:
       if username != "admin" and password !="admin":
         print("Wrong Username or Password")
         cmd = 0
+  
+  # Email
+  if command == "email":
+    if admin == 1:
+      print("What email address?")
+      address = input("Address:")
+      print("What subject?")
+      subject = input("Subject:")
+      print("What message?")
+      message = input("Message:")
+      print("Sent to:",address,"Subject:",subject,"Message:",message)
+      cmd = 0
+    else:
+      print("You need admin permission")
+      cmd = 0
+  
   # Command Finished
   if cmd == 0:
     print("Command Finished")
