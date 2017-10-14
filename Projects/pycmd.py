@@ -2,13 +2,17 @@
 from time import sleep
 import random
 import datetime
+
 # Variables
 cmd = 1
 username = 1
 password = 1
 admin = 0
+
 # Command
 while cmd == 1:
+  if admin == 0:
+    print("Please Login To Enable All Features")
   command = input("Command:")
   
   # Time
