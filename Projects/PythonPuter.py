@@ -73,7 +73,7 @@ if Username == "admin" and Password == "pass":
       for x in range(passgenamount):
         print (random.randint(10000000,100000000))
       appopen =  1
-    #log out
+    # Log Out
     if app == "logout":
       print("logging out...")
       print("please wait...")
@@ -81,8 +81,9 @@ if Username == "admin" and Password == "pass":
       shutdown = input("[y]/[n]:")
       if shutdown == "y":
         quit()
-      else:
-        print("Error #256: No file to cancel shutdown")
+      if shutdown == "n":
+        print("Canceling Shutdown")
+        appopen = 1
     # Application not found  
     else:
       print("Application not found")
