@@ -31,7 +31,7 @@ if login == 1:
   
 # Wrong Login Check
 attempts = 1
-while Username != "ADMIN" or Password !="ADMIN":
+while Username != "admin" or Password !="pass":
   if attempts >0:
     print("Wrong Username or Password")
     attempts += 1
@@ -39,7 +39,7 @@ while Username != "ADMIN" or Password !="ADMIN":
     Password = input("Password:")
 
 # Correct Login Check
-if Username == "ADMIN" and Password == "ADMIN":
+if Username == "admin" and Password == "pass":
   print("Successfully Logged In")
   sleep(0.2)
   
@@ -63,9 +63,15 @@ if Username == "ADMIN" and Password == "ADMIN":
         print("What Message")
         emailmessage = input("Message:")
         print ("Sending to:",emailaddress,"Subject:",emailsubject,"Message:",emailmessage)
-      else:
-        print("Please Retry")
       appopen = 1
+      
+    # Password Gen
+    if app == "passgen":
+      print("How many passwords do you want?")
+      passgenamount = int(input("Passwords:"))
+      for x in range(passgenamount):
+        print (random.randint(10000000,100000000))
+      appopen =  1
       
     # Application not found  
     else:
