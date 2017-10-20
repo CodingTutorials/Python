@@ -7,4 +7,4 @@ If you want to edit tutorials, message me (Mosrod#9596) on discord.
   * [Repl.it](https://repl.it/languages/python3)
   * [Trinket](https://trinket.io)
 ## Contact
-Discord: https://discord.gg/AX8rCaa
+[Discord](https://discord.gg/AX8rCaa)
