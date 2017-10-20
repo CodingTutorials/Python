@@ -71,3 +71,7 @@ Run:
 ```
 Var equals Surprise
 ```
+
+
+## Gif
+![Print](https://raw.githubusercontent.com/CodingTutorials/Files/master/Python/print.gif "Print")
