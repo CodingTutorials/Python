@@ -47,4 +47,4 @@ dollars += 1
 
 
 ## Gif
-
+![Variables](https://raw.githubusercontent.com/CodingTutorials/Files/master/Python/variables.gif "Variable")
