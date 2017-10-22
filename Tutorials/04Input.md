@@ -32,7 +32,7 @@ Do you want an apple? [Y|N]:
 
 ### Example 2:
 ```python
-name = Bob
+name = "Bob"
 input("Is " + name + " your name?")
 ```
 Run:
@@ -43,34 +43,19 @@ Is Bob your name?
 
 ### Example 3:
 ```python
-apples = 1
-if apples == 1:
-  print("You have",apples,"apples")
-apples = 2
-if apples == 2:
-  print("You have",apples,"apples")
+name = input("What is your name?")
+print("Hello, " + name + "!")
+if name == Bob:
+  print("Have a great day, Bob!")
 ```
 Run:
-```
-You have 1 apples
-You have 2 apples
-```
-
-## Example 4:
 ```python
-apples = 1
-if apples == 1:
-  print("You have",apples,"apples")
-  apples = 2
-if apples == 2:
-  print("You have",apples,"apples")
-  apples += 1
-if apples == 3:
-  print("You have",apples,"apples")
+What is your name? [Bob]
+Hello, Bob!
+Have a great day, Bob!
 ```
-Run:
-```
-You have 1 apples
-You have 2 apples
-You have 3 apples
+Run 2:
+```python
+What is your name? [Joe]
+Hello, Joe
 ```
