@@ -20,25 +20,23 @@ input("Yes/No:")
 
 
 ## Examples
-
+> Note: These examples are snippets of code and **do not** include variables
 ### Example 1:
 ```python
 input("Do you want an apple? [Y|N]")
 ```
 Run:
 ```
-Do you want an apple? [Y|N]:[](https://vignette.wikia.nocookie.net/uncyclopedia/images/b/b8/Thin_cursor.gif/revision/latest?cb=20091129041432)
+Do you want an apple? [Y|N]: 
 ```
 
 ### Example 2:
 ```python
-apples = "alot"
-if apples == "alot":
-  print("You have",apples,"apples")
+input("Is " + name + " your name?")
 ```
 Run:
 ```
-You have alot apples
+Is Bob your name?
 ```
 
 
