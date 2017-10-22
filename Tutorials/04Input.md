@@ -49,13 +49,13 @@ if name == Bob:
   print("Have a great day, Bob!")
 ```
 Run:
-```python
+```
 What is your name? [Bob]
 Hello, Bob!
 Have a great day, Bob!
 ```
 Run 2:
-```python
+```
 What is your name? [Joe]
 Hello, Joe
 ```
