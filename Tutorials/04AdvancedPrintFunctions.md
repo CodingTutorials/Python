@@ -1,4 +1,4 @@
-# AdvancedPrintFunctions
+# Advanced Print Functions
 ## Requirements
 > Tips & Tricks: Use a + sign to combine strings and variables together (without spaces)
 
