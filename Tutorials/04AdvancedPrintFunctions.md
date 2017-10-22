@@ -12,7 +12,35 @@ Output:
 Hello, Bob!
 ```
 ## Solution
-
-
-print('Hello, ' + input() + '!')
-print('Hello, ' + input() + '!')
+Type the print function
+```python
+print()
+```
+Add a pair of quotation marks
+```python
+print("")
+```
+Type "Hello, " in the quotation marks
+```python
+print("Hello, ")
+```
+Add a plus sign to combine the strings
+```python
+print("Hello, " + )
+```
+Add a input function
+```python
+print("Hello, " + input())
+```
+Add another + sign
+```python
+print("Hello, " + input() + )
+```
+Add a pair of quotation marks
+```python
+print("Hello, " + input() + "")
+```
+Add an exclamation mark inside the pair of quotation mark
+```python
+print("Hello, " + input() + "!")
+```
