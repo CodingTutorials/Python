@@ -20,7 +20,7 @@ input("Yes/No:")
 
 
 ## Examples
-> Note: These examples are snippets of code and **do not** include variables
+
 ### Example 1:
 ```python
 input("Do you want an apple? [Y|N]")
@@ -32,6 +32,7 @@ Do you want an apple? [Y|N]:
 
 ### Example 2:
 ```python
+name = Bob
 input("Is " + name + " your name?")
 ```
 Run:
