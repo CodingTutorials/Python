@@ -1,6 +1,6 @@
 # Python
 ## Helping
-If you want to edit tutorials, message me (Mosrod#9596) on discord.
+If you want to edit tutorials, go on the Discord server and ask.
 ## Compilers
   * [Python](https://www.python.org)
   * [PyCharm](https://www.jetbrains.com/pycharm/)
