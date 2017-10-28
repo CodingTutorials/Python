@@ -7,7 +7,6 @@ Input:
 ```python
 Bob
 ```
->! [Moderate] This is a moderate spoiler
 
 Output:
 ```python
