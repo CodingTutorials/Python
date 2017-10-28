@@ -2,6 +2,7 @@
 ## Requirements
 > Tips & Tricks: Use a + sign to combine strings and variables together (without spaces)
 >! Spoiler text
+>! Spoiler text
 Input:
 ```python
 Bob
