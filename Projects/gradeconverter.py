@@ -1,9 +1,15 @@
 # Grade Converter
 # http://cs.smith.edu/~jorourke/Grading.html
+Choice = input("Fraction/Percent [F/P]:")
 
-Numerator = int(input("Points"))
-Denominator = int(input("Total"))
-Score = Numerator/Denominator * 100
+if Choice == "F":
+  Numerator = float(input("Points: "))
+  Denominator = float(input("Total: "))
+  Score = Numerator/Denominator * 100
+
+if Choice == "P":
+  Score = float(input("Percent: "))
+
 
 if Score >= 97.5:
   print("A+")
