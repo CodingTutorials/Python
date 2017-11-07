@@ -2,12 +2,12 @@
 # http://cs.smith.edu/~jorourke/Grading.html
 Choice = input("Fraction/Percent [F/P]:")
 
-if Choice == "F":
+if Choice == "F" or Choice == "f":
   Numerator = float(input("Points: "))
   Denominator = float(input("Total: "))
   Score = Numerator/Denominator * 100
 
-if Choice == "P":
+if Choice == "P" or Choice == "p":
   Score = float(input("Percent: "))
 
 
