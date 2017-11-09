@@ -5,6 +5,7 @@ from random import *
 pasw = 1
 start = 1
 password = 0
+diff = 1
 # Prints All Passwords (Change to dev = 1 to enable)
 dev = 0
 # Code
@@ -13,10 +14,13 @@ if start == 1:
   print("|Easy|Meduim|Hard|Impossible|")
 
 # |Easy|Meduim|Hard|Impossible|
-choice = input("|E|M|H|I|:")
+while diff == 1:
+  choice = input("|E|M|H|I|:")
+  diff = 0
 
 # Easy
 if choice == "E":
+  diff = 0
   while pasw == 1:
     if start == 1:
       print(password)
@@ -38,6 +42,7 @@ if choice == "E":
 
 # Meduim
 if choice == "M":
+  diff = 0
   while pasw == 1:
     if start == 1:
       print(password)
@@ -59,6 +64,7 @@ if choice == "M":
 
 # Hard
 if choice == "H":
+  diff = 0
   while pasw == 1:
     if start == 1:
       print(password)
@@ -80,6 +86,7 @@ if choice == "H":
 
 # Impossible
 if choice == "I":
+  diff = 0
   while pasw == 1:
     if start == 1:
       print(password)
@@ -98,3 +105,6 @@ if choice == "I":
     elif password != passwordguess:
       print("Wrong!")
       pasw = 1
+      
+else:
+  print("Please Retry")
