@@ -8,11 +8,11 @@ password = 0
 # Prints All Passwords (Change to dev = 1 to enable)
 dev = 0
 # Code
-  
-# password = randint(10000, 100000)
-# print(password)
+if start == 1:
+  print("Welcome to Password Guesser!")
+  print("|Easy|Meduim|Hard|Impossible|")
 
-# Easy|Meduim|Hard|Impossible
+# |Easy|Meduim|Hard|Impossible|
 choice = input("|E|M|H|I|:")
 
 # Easy
