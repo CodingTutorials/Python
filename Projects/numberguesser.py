@@ -5,6 +5,8 @@ from random import *
 pasw = 1
 start = 1
 password = 0
+# Prints All Passwords (Change to dev = 1 to enable)
+dev = 0
 # Code
   
 # password = randint(10000, 100000)
@@ -23,7 +25,8 @@ if choice == "E":
     if password == passwordguess:
       print("Correct!")
       password = randint(1, 10)
-      print(password)
+      if dev == 1:
+        print(password)
       pasw = 1
     elif password > passwordguess:
       print("More")
@@ -43,7 +46,8 @@ if choice == "M":
     if password == passwordguess:
       print("Correct!")
       password = randint(1, 100)
-      print(password)
+      if dev == 1:
+        print(password)
       pasw = 1
     elif password > passwordguess:
       print("More")
@@ -63,7 +67,8 @@ if choice == "H":
     if password == passwordguess:
       print("Correct!")
       password = randint(1, 1000)
-      print(password)
+      if dev == 1:
+        print(password)
       pasw = 1
     elif password > passwordguess:
       print("More")
@@ -83,7 +88,8 @@ if choice == "I":
     if password == passwordguess:
       print("Correct!")
       password = randint(10000, 100000)
-      print(password)
+      if dev == 1:
+        print(password)
       pasw = 1
     elif password > passwordguess:
       print("More")
