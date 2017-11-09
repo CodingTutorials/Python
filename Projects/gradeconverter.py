@@ -4,6 +4,7 @@
 # Checker
 
 def checker():
+  
   if Score >= 97.5:
     print("A+")
   
