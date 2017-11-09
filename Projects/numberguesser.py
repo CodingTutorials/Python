@@ -13,7 +13,7 @@ dev = 0
 # print(password)
 
 # Easy|Meduim|Hard|Impossible
-choice = input("E|M|H|I:")
+choice = input("|E|M|H|I|:")
 
 # Easy
 if choice == "E":
