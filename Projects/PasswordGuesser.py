@@ -11,11 +11,11 @@ dev = 0
 # Code
 if start == 1:
   print("Welcome to Password Guesser!")
-  print("|Easy|Meduim|Hard|Impossible|")
+  print("|Easy|Meduim|Hard|Impossible|Custom|")
 
-# |Easy|Meduim|Hard|Impossible|
+# |Easy|Meduim|Hard|Impossible|Custom|
 while diff == 1:
-  choice = input("|E|M|H|I|:")
+  choice = input("|E|M|H|I|C|:")
   diff = 0
 
 # Easy
@@ -95,6 +95,30 @@ if choice == "I":
     if password == passwordguess:
       print("Correct!")
       password = randint(10000, 100000)
+      if dev == 1:
+        print(password)
+      pasw = 1
+    elif password > passwordguess:
+      print("More")
+    elif password < passwordguess:
+      print("Less")
+    elif password != passwordguess:
+      print("Wrong!")
+      pasw = 1
+      
+# Custom
+if choice == "C":
+  diff = 0
+  while pasw == 1:
+    if start == 1:
+      print(password)
+      start = 0
+    passwordguess = int(input("Password:"))
+    if password == passwordguess:
+      print("Correct!")
+      devx = int(input("X: "))
+      devy = int(input("Y: "))
+      password = randint(devx, devy)
       if dev == 1:
         print(password)
       pasw = 1
