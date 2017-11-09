@@ -6,6 +6,7 @@ pasw = 1
 start = 1
 password = 0
 diff = 1
+guesscount = 1
 # Prints All Passwords (Change to dev = 1 to enable)
 dev = 0
 # Code
@@ -28,14 +29,17 @@ if choice == "E":
     passwordguess = int(input("Password:"))
     if password == passwordguess:
       print("Correct!")
+      print("You guessed the password in", guesscount, "tries")
       password = randint(1, 10)
       if dev == 1:
         print(password)
       pasw = 1
     elif password > passwordguess:
       print("More")
+      guesscount += 1
     elif password < passwordguess:
       print("Less")
+      guesscount += 1
     elif password != passwordguess:
       print("Wrong!")
       pasw = 1
@@ -50,14 +54,17 @@ if choice == "M":
     passwordguess = int(input("Password:"))
     if password == passwordguess:
       print("Correct!")
+      print("You guessed the password in", guesscount, "tries")
       password = randint(1, 100)
       if dev == 1:
         print(password)
       pasw = 1
     elif password > passwordguess:
       print("More")
+      guesscount += 1
     elif password < passwordguess:
       print("Less")
+      guesscount += 1
     elif password != passwordguess:
       print("Wrong!")
       pasw = 1
@@ -72,14 +79,17 @@ if choice == "H":
     passwordguess = int(input("Password:"))
     if password == passwordguess:
       print("Correct!")
+      print("You guessed the password in", guesscount, "tries")
       password = randint(1, 1000)
       if dev == 1:
         print(password)
       pasw = 1
     elif password > passwordguess:
       print("More")
+      guesscount += 1
     elif password < passwordguess:
       print("Less")
+      guesscount += 1
     elif password != passwordguess:
       print("Wrong!")
       pasw = 1      
@@ -94,14 +104,17 @@ if choice == "I":
     passwordguess = int(input("Password:"))
     if password == passwordguess:
       print("Correct!")
+      print("You guessed the password in", guesscount, "tries")
       password = randint(10000, 100000)
       if dev == 1:
         print(password)
       pasw = 1
     elif password > passwordguess:
       print("More")
+      guesscount += 1
     elif password < passwordguess:
       print("Less")
+      guesscount += 1
     elif password != passwordguess:
       print("Wrong!")
       pasw = 1
@@ -116,6 +129,7 @@ if choice == "C":
     passwordguess = int(input("Password:"))
     if password == passwordguess:
       print("Correct!")
+      print("You guessed the password in", guesscount, "tries")
       devx = int(input("X: "))
       devy = int(input("Y: "))
       password = randint(devx, devy)
@@ -124,8 +138,10 @@ if choice == "C":
       pasw = 1
     elif password > passwordguess:
       print("More")
+      guesscount += 1
     elif password < passwordguess:
       print("Less")
+      guesscount += 1
     elif password != passwordguess:
       print("Wrong!")
       pasw = 1
