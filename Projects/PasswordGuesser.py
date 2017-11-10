@@ -13,7 +13,8 @@ dev = 0
 if start == 1:
   print("Welcome to Password Guesser!")
   print("|Easy|Meduim|Hard|Impossible|Custom|")
-
+if dev == 1:
+  print("You are a developer!")
 # |Easy|Meduim|Hard|Impossible|Custom|
 while diff == 1:
   choice = input("|E|M|H|I|C|:")
