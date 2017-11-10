@@ -13,12 +13,12 @@ dev = 0
 # Code
 if start == 1:
   print("Welcome to Password Guesser!")
-  print("|Easy|Medium|Hard|Impossible|Custom|")
+  print("|Easy|Medium|Hard|Impossible|Custom|Learn|")
 if dev == 1:
   print("You are a developer!")
-# |Easy|Medium|Hard|Impossible|Custom|
+# |Easy|Medium|Hard|Impossible|Custom|Learn|
 while diff == 1:
-  choice = input("|E|M|H|I|C|:")
+  choice = input("|E|M|H|I|C|L|:")
   diff = 0
 
 # Easy
@@ -160,6 +160,44 @@ if choice == "C":
     elif password != passwordguess:
       print("Wrong!")
       pasw = 1
-      
+
+# Learn
+if choice == "L":
+  diff = 0
+  while pasw == 1:
+    if start == 1:
+      password = randint(1, 10)
+      print("Choose a number between 1 and 10")
+      lesson = 1
+      start = 2
+    passwordguess = int(input("Password:"))
+    if password == passwordguess:
+      print("Correct!")
+      print("You guessed the password in", guesscount, "tries")
+      if lesson == 1:
+        if guesscount < 5:
+          print("You completed the level!")
+          lesson = 2
+        if guesscount > 5:
+          print("You failed the level!")
+          print("To complete the level, use less than 5 tries")
+          password = randint(1, 10)
+          print("Choose a number between 1 and 10")
+      guesscount = 0
+      if lesson == 2:
+        password = randint(1, 100)
+        print("Choose a number between 1 and 100")
+      if dev == 1:
+        print(password)
+      pasw = 1
+    elif password > passwordguess:
+      print("More")
+      guesscount += 1
+    elif password < passwordguess:
+      print("Less")
+      guesscount += 1
+    elif password != passwordguess:
+      print("Wrong!")
+      pasw = 1      
 else:
   print("Please Retry")
