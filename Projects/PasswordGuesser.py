@@ -6,17 +6,17 @@ pasw = 1
 start = 1
 password = 0
 diff = 1
-guesscount = 1
+guesscount = 0
 # Prints All Passwords (Change to dev = 1 to enable)
 dev = 0
 
 # Code
 if start == 1:
   print("Welcome to Password Guesser!")
-  print("|Easy|Meduim|Hard|Impossible|Custom|")
+  print("|Easy|Medium|Hard|Impossible|Custom|")
 if dev == 1:
   print("You are a developer!")
-# |Easy|Meduim|Hard|Impossible|Custom|
+# |Easy|Medium|Hard|Impossible|Custom|
 while diff == 1:
   choice = input("|E|M|H|I|C|:")
   diff = 0
@@ -27,6 +27,7 @@ if choice == "E":
   while pasw == 1:
     if start == 1:
       password = randint(1, 10)
+      print("Easy Mode is between 1 and 10")
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
@@ -47,12 +48,13 @@ if choice == "E":
       print("Wrong!")
       pasw = 1
 
-# Meduim
+# Medium
 if choice == "M":
   diff = 0
   while pasw == 1:
     if start == 1:
       password = randint(1, 100)
+      print("Medium Mode is between 1 and 100")
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
@@ -79,6 +81,7 @@ if choice == "H":
   while pasw == 1:
     if start == 1:
       password = randint(1, 1000)
+      print("Hard Mode is between 1 and 1000")
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
@@ -104,14 +107,15 @@ if choice == "I":
   diff = 0
   while pasw == 1:
     if start == 1:
-      password = randint(10000, 100000)
+      password = randint(1, 10000)
+      print("Impossible Mode is between 1 and 10000")
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
       print("Correct!")
       print("You guessed the password in", guesscount, "tries")
       guesscount = 0
-      password = randint(10000, 100000)
+      password = randint(1, 10000)
       if dev == 1:
         print(password)
       pasw = 1
@@ -133,6 +137,7 @@ if choice == "C":
       devx = int(input("X: "))
       devy = int(input("Y: "))
       password = randint(devx, devy)
+      print("Custom Mode is between", devx, "and", devy)
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
@@ -141,6 +146,7 @@ if choice == "C":
       guesscount = 0
       devx = int(input("X: "))
       devy = int(input("Y: "))
+      print("Custom Mode is between", devx, "and", devy)
       password = randint(devx, devy)
       if dev == 1:
         print(password)
