@@ -30,7 +30,7 @@ def numgen():
 
   
 # Code
-print("Welcome to PyCmd 2.0!")
+print("Welcome to PyCmd 2!")
 loginchoice = input("Would you like to login?")
 
 
