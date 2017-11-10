@@ -170,6 +170,9 @@ if choice == "L":
       print("Choose a number between 1 and 10")
       lesson = 1
       start = 2
+    if lesson == 2:
+        password = randint(1, 100)
+        print("Choose a number between 1 and 100")
     passwordguess = int(input("Password:"))
     if password == passwordguess:
       print("Correct!")
@@ -183,10 +186,17 @@ if choice == "L":
           print("To complete the level, use less than 5 tries")
           password = randint(1, 10)
           print("Choose a number between 1 and 10")
-      guesscount = 0
+          
       if lesson == 2:
-        password = randint(1, 100)
-        print("Choose a number between 1 and 100")
+        if guesscount < 10:
+          print("You completed the level!")
+          lesson = 2
+        if guesscount > 10:
+          print("You failed the level!")
+          print("To complete the level, use less than 10 tries")
+          password = randint(1, 100)
+          print("Choose a number between 1 and 100")
+      guesscount = 0
       if dev == 1:
         print(password)
       pasw = 1
