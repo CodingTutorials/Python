@@ -17,7 +17,7 @@ if start == 1:
   print("|Easy|Medium|Hard|VeryHard|Extreme|Impossible|Impossible2|Custom|Learn|")
 if dev == 1:
   print("You are a developer!")
-# |Easy|Medium|Hard|VeryHard|Extreme|Impossible|Impossible2|Custom|Learn|
+# |Easy(1-10)|Medium(1-100)|Hard(1-100)|VeryHard(1-1000)|Extreme(1-10000)|Impossible(1-100000)|Impossible2(1-1000000)|Custom|Learn|
 while diff == 1:
   choice = input("|E|M|H|VH|EX|I|I2|C|L|:")
   diff = 0
