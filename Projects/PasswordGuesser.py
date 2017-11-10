@@ -30,6 +30,7 @@ if choice == "E":
     if password == passwordguess:
       print("Correct!")
       print("You guessed the password in", guesscount, "tries")
+      guesscount = 0
       password = randint(1, 10)
       if dev == 1:
         print(password)
@@ -55,6 +56,7 @@ if choice == "M":
     if password == passwordguess:
       print("Correct!")
       print("You guessed the password in", guesscount, "tries")
+      guesscount = 0
       password = randint(1, 100)
       if dev == 1:
         print(password)
@@ -80,6 +82,7 @@ if choice == "H":
     if password == passwordguess:
       print("Correct!")
       print("You guessed the password in", guesscount, "tries")
+      guesscount = 0
       password = randint(1, 1000)
       if dev == 1:
         print(password)
@@ -105,6 +108,7 @@ if choice == "I":
     if password == passwordguess:
       print("Correct!")
       print("You guessed the password in", guesscount, "tries")
+      guesscount = 0
       password = randint(10000, 100000)
       if dev == 1:
         print(password)
@@ -129,6 +133,7 @@ if choice == "C":
     passwordguess = int(input("Password:"))
     if password == passwordguess:
       print("Correct!")
+      guesscount = 0
       print("You guessed the password in", guesscount, "tries")
       devx = int(input("X: "))
       devy = int(input("Y: "))
