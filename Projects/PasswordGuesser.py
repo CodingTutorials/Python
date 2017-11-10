@@ -26,7 +26,7 @@ if choice == "E":
   diff = 0
   while pasw == 1:
     if start == 1:
-      print(password)
+      password = randint(1, 10)
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
@@ -52,7 +52,7 @@ if choice == "M":
   diff = 0
   while pasw == 1:
     if start == 1:
-      print(password)
+      password = randint(1, 100)
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
@@ -78,7 +78,7 @@ if choice == "H":
   diff = 0
   while pasw == 1:
     if start == 1:
-      print(password)
+      password = randint(1, 1000)
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
@@ -104,7 +104,7 @@ if choice == "I":
   diff = 0
   while pasw == 1:
     if start == 1:
-      print(password)
+      password = randint(10000, 100000)
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
@@ -130,7 +130,9 @@ if choice == "C":
   diff = 0
   while pasw == 1:
     if start == 1:
-      print(password)
+      devx = int(input("X: "))
+      devy = int(input("Y: "))
+      password = randint(devx, devy)
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
