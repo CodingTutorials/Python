@@ -9,6 +9,7 @@ diff = 1
 guesscount = 1
 # Prints All Passwords (Change to dev = 1 to enable)
 dev = 0
+
 # Code
 if start == 1:
   print("Welcome to Password Guesser!")
