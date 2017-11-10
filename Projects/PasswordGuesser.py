@@ -247,12 +247,29 @@ if choice == "L":
             print("You completed the level!")
             guesscount = 1
             less = 1
-            lesson = 5
+            lesson = 6
           if guesscount > 80:
             print("You failed the level!")
-            print("To complete the level, use less than 40 tries")
+            print("To complete the level, use less than 80 tries")
             password = randint(1, 100000)
             print("Choose a number between 1 and 100000")
+            
+      if lesson == 6:
+        if less == 1:
+          password = randint(1, 1000000)
+          print("Choose a number between 1 and 1000000")
+          less = 0
+        if password == passwordguess:
+          if guesscount <= 160:
+            print("You completed the level!")
+            guesscount = 1
+            less = 1
+            lesson = 6
+          if guesscount > 160:
+            print("You failed the level!")
+            print("To complete the level, use less than 160 tries")
+            password = randint(1, 1000000)
+            print("Choose a number between 1 and 1000000")    
             
       guesscount = 1
       if dev == 1:
