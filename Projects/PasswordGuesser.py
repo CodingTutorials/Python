@@ -1,5 +1,7 @@
 # Imports
 from random import *
+from time import sleep
+import sys
 
 # Variables
 pasw = 1
@@ -13,8 +15,16 @@ dev = 0
 
 # Code
 if start == 1:
-  print("Welcome to Password Guesser!")
-  print("|Easy|Medium|Hard|VeryHard|Extreme|Impossible|Impossible2|Impossible3|Custom|Learn|")
+  text = "Welcome to Password Guesser!"
+  for character in text:
+    sys.stdout.write(character)
+    sleep(0.2)
+  print("\n")
+  text = "|Easy|Medium|Hard|VeryHard|Extreme|Impossible|Impossible2|Impossible3|Custom|Learn|"
+  for character in text:
+    sys.stdout.write(character)
+    sleep(0.05)
+  print("\n")
 if dev == 1:
   print("You are a developer!")
 # |Easy(1-10)|Medium(1-100)|Hard(1-100)|VeryHard(1-1000)|Extreme(1-10000)|Impossible(1-100000)|Impossible2(1-1000000)|Impossible3(1-100000000)Custom|Learn|
