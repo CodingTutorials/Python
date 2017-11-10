@@ -14,12 +14,12 @@ dev = 0
 # Code
 if start == 1:
   print("Welcome to Password Guesser!")
-  print("|Easy|Medium|Hard|Impossible|Custom|Learn|")
+  print("|Easy|Medium|Hard|VeryHard|Extreme|Impossible|Custom|Learn|")
 if dev == 1:
   print("You are a developer!")
-# |Easy|Medium|Hard|Impossible|Custom|Learn|
+# |Easy|Medium|Hard|VeryHard|Extreme|Impossible|Custom|Learn|
 while diff == 1:
-  choice = input("|E|M|H|I|C|L|:")
+  choice = input("|E|M|H|VH|EX|I|C|L|:")
   diff = 0
 
 # Easy
@@ -103,13 +103,13 @@ if choice == "H":
       print("Wrong!")
       pasw = 1      
 
-# Impossible
-if choice == "I":
+# VeryHard
+if choice == "VH":
   diff = 0
   while pasw == 1:
     if start == 1:
       password = randint(1, 10000)
-      print("Impossible Mode is between 1 and 10000")
+      print("VeryHard Mode is between 1 and 10000")
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
@@ -117,6 +117,59 @@ if choice == "I":
       print("You guessed the password in", guesscount, "tries")
       guesscount = 0
       password = randint(1, 10000)
+      if dev == 1:
+        print(password)
+      pasw = 1
+    elif password > passwordguess:
+      print("More")
+      guesscount += 1
+    elif password < passwordguess:
+      print("Less")
+      guesscount += 1
+    elif password != passwordguess:
+      print("Wrong!")
+      pasw = 1
+# Extreme
+if choice == "EX":
+  diff = 0
+  while pasw == 1:
+    if start == 1:
+      password = randint(1, 100000)
+      print("Extreme Mode is between 1 and 100000")
+      start = 0
+    passwordguess = int(input("Password:"))
+    if password == passwordguess:
+      print("Correct!")
+      print("You guessed the password in", guesscount, "tries")
+      guesscount = 0
+      password = randint(1, 100000)
+      if dev == 1:
+        print(password)
+      pasw = 1
+    elif password > passwordguess:
+      print("More")
+      guesscount += 1
+    elif password < passwordguess:
+      print("Less")
+      guesscount += 1
+    elif password != passwordguess:
+      print("Wrong!")
+      pasw = 1
+      
+# Impossible
+if choice == "I":
+  diff = 0
+  while pasw == 1:
+    if start == 1:
+      password = randint(1, 1000000)
+      print("Impossible Mode is between 1 and 1000000")
+      start = 0
+    passwordguess = int(input("Password:"))
+    if password == passwordguess:
+      print("Correct!")
+      print("You guessed the password in", guesscount, "tries")
+      guesscount = 0
+      password = randint(1, 1000000)
       if dev == 1:
         print(password)
       pasw = 1
