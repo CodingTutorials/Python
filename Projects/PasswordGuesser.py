@@ -14,12 +14,12 @@ dev = 0
 # Code
 if start == 1:
   print("Welcome to Password Guesser!")
-  print("|Easy|Medium|Hard|VeryHard|Extreme|Impossible|Custom|Learn|")
+  print("|Easy|Medium|Hard|VeryHard|Extreme|Impossible|Impossible2|Custom|Learn|")
 if dev == 1:
   print("You are a developer!")
-# |Easy|Medium|Hard|VeryHard|Extreme|Impossible|Custom|Learn|
+# |Easy|Medium|Hard|VeryHard|Extreme|Impossible|Impossible2|Custom|Learn|
 while diff == 1:
-  choice = input("|E|M|H|VH|EX|I|C|L|:")
+  choice = input("|E|M|H|VH|EX|I|I2|C|L|:")
   diff = 0
 
 # Easy
@@ -182,6 +182,34 @@ if choice == "I":
     elif password != passwordguess:
       print("Wrong!")
       pasw = 1
+
+# Impossible 2
+if choice == "I2":
+  diff = 0
+  while pasw == 1:
+    if start == 1:
+      password = randint(1, 10000000)
+      print("Impossible2 Mode is between 1 and 10000000")
+      start = 0
+    passwordguess = int(input("Password:"))
+    if password == passwordguess:
+      print("Correct!")
+      print("You guessed the password in", guesscount, "tries")
+      guesscount = 0
+      password = randint(1, 10000000)
+      if dev == 1:
+        print(password)
+      pasw = 1
+    elif password > passwordguess:
+      print("More")
+      guesscount += 1
+    elif password < passwordguess:
+      print("Less")
+      guesscount += 1
+    elif password != passwordguess:
+      print("Wrong!")
+      pasw = 1
+
       
 # Custom
 if choice == "C":
