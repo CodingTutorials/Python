@@ -26,7 +26,11 @@ if start == 1:
     sleep(0.05)
   print("\n")
 if dev == 1:
-  print("You are a developer!")
+  text = "You are a developer!"
+  for character in text:
+    sys.stdout.write(character)
+    sleep(0.05)
+  print("\n")
 # |Easy(1-10)|Medium(1-100)|Hard(1-100)|VeryHard(1-1000)|Extreme(1-10000)|Impossible(1-100000)|Impossible2(1-1000000)|Impossible3(1-100000000)Custom|Learn|
 while diff == 1:
   choice = input("|E|M|H|VH|EX|I|I2|I3|C|L|:")
