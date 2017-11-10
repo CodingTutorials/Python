@@ -216,7 +216,7 @@ if choice == "I3":
   while pasw == 1:
     if start == 1:
       password = randint(1, 100000000)
-      print("Impossible2 Mode is between 1 and 100000000")
+      print("Impossible3 Mode is between 1 and 100000000")
       start = 0
     passwordguess = int(input("Password:"))
     if password == passwordguess:
