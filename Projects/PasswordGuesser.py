@@ -134,8 +134,8 @@ if choice == "C":
     passwordguess = int(input("Password:"))
     if password == passwordguess:
       print("Correct!")
-      guesscount = 0
       print("You guessed the password in", guesscount, "tries")
+      guesscount = 0
       devx = int(input("X: "))
       devy = int(input("Y: "))
       password = randint(devx, devy)
