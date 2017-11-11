@@ -60,7 +60,7 @@ if choice == "E":
       streakcount += 1
       streakguess += guesscount
       if streakcount == 3:
-        if streakguess <= 6:
+        if streakguess <= 8:
           print("Streak!")
         else:
           print("No Streak!")
