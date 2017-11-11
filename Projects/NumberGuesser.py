@@ -12,6 +12,9 @@ guesscount = 1
 less = 1
 streakcount = 0
 streakguess = 0
+streak1 = 0
+streak2 = 0
+streak3 = 0
 # Prints All Numbers (Change to dev = 1 to enable)
 dev = 0
 
@@ -49,7 +52,7 @@ if choice == "E":
   while pasw == 1:
     if start == 1:
       number = randint(1, 10)
-      print("Easy Mode is |between 1 and 10| and |has a streak of 8|")
+      print("Easy Mode is |between 1 and 10| and |has a streak of 3|")
       if dev == 1:
         print(number)
       start = 0
@@ -59,11 +62,19 @@ if choice == "E":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streakcount == 1:
+        streak1 = streakguess
+      if streakcount == 2:
+        streak2 = streakguess
       if streakcount == 3:
-        if streakguess <= 8:
+        streak3 = streakguess
+        if streak1 <= 3 and streak2 <= 3 and streak3 <= 3:
           print("Streak!")
         else:
           print("No Streak!")
+        streak1 = 0
+        streak2 = 0
+        streak3 = 0
         streakguess = 0
         streakcount = 0
       guesscount = 1
@@ -97,11 +108,19 @@ if choice == "M":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streakcount == 1:
+        streak1 = streakguess
+      if streakcount == 2:
+        streak2 = streakguess
       if streakcount == 3:
-        if streakguess <= 24:
+        streak3 = streakguess
+        if streak1 <= 8 and streak2 <= 8 and streak3 <= 8:
           print("Streak!")
         else:
           print("No Streak!")
+        streak1 = 0
+        streak2 = 0
+        streak3 = 0
         streakguess = 0
         streakcount = 0
       guesscount = 1
@@ -135,11 +154,19 @@ if choice == "H":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streakcount == 1:
+        streak1 = streakguess
+      if streakcount == 2:
+        streak2 = streakguess
       if streakcount == 3:
-        if streakguess <= 48:
+        streak3 = streakguess
+        if streak1 <= 16 and streak2 <= 16 and streak3 <= 16:
           print("Streak!")
         else:
           print("No Streak!")
+        streak1 = 0
+        streak2 = 0
+        streak3 = 0
         streakguess = 0
         streakcount = 0
       guesscount = 1
@@ -173,11 +200,19 @@ if choice == "VH":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streakcount == 1:
+        streak1 = streakguess
+      if streakcount == 2:
+        streak2 = streakguess
       if streakcount == 3:
-        if streakguess <= 96:
+        streak3 = streakguess
+        if streak1 <= 32 and streak2 <= 32 and streak3 <= 32:
           print("Streak!")
         else:
           print("No Streak!")
+        streak1 = 0
+        streak2 = 0
+        streak3 = 0
         streakguess = 0
         streakcount = 0
       guesscount = 1
@@ -210,11 +245,19 @@ if choice == "EX":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streakcount == 1:
+        streak1 = streakguess
+      if streakcount == 2:
+        streak2 = streakguess
       if streakcount == 3:
-        if streakguess <= 192:
+        streak3 = streakguess
+        if streak1 <= 64 and streak2 <= 64 and streak3 <= 64:
           print("Streak!")
         else:
           print("No Streak!")
+        streak1 = 0
+        streak2 = 0
+        streak3 = 0
         streakguess = 0
         streakcount = 0
       guesscount = 1
@@ -248,11 +291,19 @@ if choice == "I":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streakcount == 1:
+        streak1 = streakguess
+      if streakcount == 2:
+        streak2 = streakguess
       if streakcount == 3:
-        if streakguess <= 384:
+        streak3 = streakguess
+        if streak1 <= 128 and streak2 <= 128 and streak3 <= 128:
           print("Streak!")
         else:
           print("No Streak!")
+        streak1 = 0
+        streak2 = 0
+        streak3 = 0
         streakguess = 0
         streakcount = 0
       guesscount = 1
@@ -286,11 +337,19 @@ if choice == "I2":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streakcount == 1:
+        streak1 = streakguess
+      if streakcount == 2:
+        streak2 = streakguess
       if streakcount == 3:
-        if streakguess <= 768:
+        streak3 = streakguess
+        if streak1 <= 256 and streak2 <= 256 and streak3 <= 256:
           print("Streak!")
         else:
           print("No Streak!")
+        streak1 = 0
+        streak2 = 0
+        streak3 = 0
         streakguess = 0
         streakcount = 0
       guesscount = 1
@@ -324,11 +383,19 @@ if choice == "I3":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streakcount == 1:
+        streak1 = streakguess
+      if streakcount == 2:
+        streak2 = streakguess
       if streakcount == 3:
-        if streakguess <= 1536:
+        streak3 = streakguess
+        if streak1 <= 512 and streak2 <= 512 and streak3 <= 512:
           print("Streak!")
         else:
           print("No Streak!")
+        streak1 = 0
+        streak2 = 0
+        streak3 = 0
         streakguess = 0
         streakcount = 0
       guesscount = 1
@@ -366,11 +433,19 @@ if choice == "C":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streakcount == 1:
+        streak1 = streakguess
+      if streakcount == 2:
+        streak2 = streakguess
       if streakcount == 3:
-        if streakguess <= streakamount:
+        streak3 = streakguess
+        if streak1 <= streakamount and streak2 <= streakamount and streak3 <= streakamount:
           print("Streak!")
         else:
           print("No Streak!")
+        streak1 = 0
+        streak2 = 0
+        streak3 = 0
         streakguess = 0
         streakcount = 0
       guesscount = 1
