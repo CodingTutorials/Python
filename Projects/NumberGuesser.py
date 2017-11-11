@@ -10,6 +10,8 @@ number = 0
 diff = 1
 guesscount = 1
 less = 1
+streakcount = 0
+streakguess = 0
 # Prints All Numbers (Change to dev = 1 to enable)
 dev = 0
 
@@ -48,12 +50,23 @@ if choice == "E":
     if start == 1:
       number = randint(1, 10)
       print("Easy Mode is between 1 and 10")
+      if dev == 1:
+        print(number)
       start = 0
     numberguess = int(input("Number:"))
     if number == numberguess:
       print("Correct!")
       print("You guessed the number in", guesscount, "tries")
-      guesscount = 0
+      streakcount += 1
+      streakguess += guesscount
+      if streakcount == 3:
+        if streakguess <= 6:
+          print("Streak!")
+        else:
+          print("No Streak!")
+        streakguess = 0
+        streakcount = 0
+      guesscount = 1
       number = randint(1, 10)
       if dev == 1:
         print(number)
@@ -75,12 +88,23 @@ if choice == "M":
     if start == 1:
       number = randint(1, 100)
       print("Medium Mode is between 1 and 100")
+      if dev == 1:
+        print(number)
       start = 0
     numberguess = int(input("Number:"))
     if number == numberguess:
       print("Correct!")
       print("You guessed the number in", guesscount, "tries")
-      guesscount = 0
+      streakcount += 1
+      streakguess += guesscount
+      if streakcount == 3:
+        if streakguess <= 24:
+          print("Streak!")
+        else:
+          print("No Streak!")
+        streakguess = 0
+        streakcount = 0
+      guesscount = 1
       number = randint(1, 100)
       if dev == 1:
         print(number)
@@ -102,12 +126,23 @@ if choice == "H":
     if start == 1:
       number = randint(1, 1000)
       print("Hard Mode is between 1 and 1000")
+      if dev == 1:
+        print(number)
       start = 0
     numberguess = int(input("Number:"))
     if number == numberguess:
       print("Correct!")
       print("You guessed the number in", guesscount, "tries")
-      guesscount = 0
+      streakcount += 1
+      streakguess += guesscount
+      if streakcount == 3:
+        if streakguess <= 48:
+          print("Streak!")
+        else:
+          print("No Streak!")
+        streakguess = 0
+        streakcount = 0
+      guesscount = 1
       number = randint(1, 1000)
       if dev == 1:
         print(number)
@@ -129,12 +164,23 @@ if choice == "VH":
     if start == 1:
       number = randint(1, 10000)
       print("VeryHard Mode is between 1 and 10000")
+      if dev == 1:
+        print(number)
       start = 0
     numberguess = int(input("Number:"))
     if number == numberguess:
       print("Correct!")
       print("You guessed the number in", guesscount, "tries")
-      guesscount = 0
+      streakcount += 1
+      streakguess += guesscount
+      if streakcount == 3:
+        if streakguess <= 96:
+          print("Streak!")
+        else:
+          print("No Streak!")
+        streakguess = 0
+        streakcount = 0
+      guesscount = 1
       number = randint(1, 10000)
       if dev == 1:
         print(number)
@@ -155,12 +201,23 @@ if choice == "EX":
     if start == 1:
       number = randint(1, 100000)
       print("Extreme Mode is between 1 and 100000")
+      if dev == 1:
+        print(number)
       start = 0
     numberguess = int(input("Number:"))
     if number == numberguess:
       print("Correct!")
       print("You guessed the number in", guesscount, "tries")
-      guesscount = 0
+      streakcount += 1
+      streakguess += guesscount
+      if streakcount == 3:
+        if streakguess <= 192:
+          print("Streak!")
+        else:
+          print("No Streak!")
+        streakguess = 0
+        streakcount = 0
+      guesscount = 1
       number = randint(1, 100000)
       if dev == 1:
         print(number)
@@ -182,12 +239,23 @@ if choice == "I":
     if start == 1:
       number = randint(1, 1000000)
       print("Impossible Mode is between 1 and 1000000")
+      if dev == 1:
+        print(number)
       start = 0
     numberguess = int(input("Number:"))
     if number == numberguess:
       print("Correct!")
       print("You guessed the number in", guesscount, "tries")
-      guesscount = 0
+      streakcount += 1
+      streakguess += guesscount
+      if streakcount == 3:
+        if streakguess <= 384:
+          print("Streak!")
+        else:
+          print("No Streak!")
+        streakguess = 0
+        streakcount = 0
+      guesscount = 1
       number = randint(1, 1000000)
       if dev == 1:
         print(number)
@@ -209,12 +277,23 @@ if choice == "I2":
     if start == 1:
       number = randint(1, 10000000)
       print("Impossible2 Mode is between 1 and 10000000")
+      if dev == 1:
+        print(number)
       start = 0
     numberguess = int(input("Number:"))
     if number == numberguess:
       print("Correct!")
       print("You guessed the number in", guesscount, "tries")
-      guesscount = 0
+      streakcount += 1
+      streakguess += guesscount
+      if streakcount == 3:
+        if streakguess <= 768:
+          print("Streak!")
+        else:
+          print("No Streak!")
+        streakguess = 0
+        streakcount = 0
+      guesscount = 1
       number = randint(1, 10000000)
       if dev == 1:
         print(number)
@@ -236,12 +315,23 @@ if choice == "I3":
     if start == 1:
       number = randint(1, 100000000)
       print("Impossible3 Mode is between 1 and 100000000")
+      if dev == 1:
+        print(number)
       start = 0
     numberguess = int(input("Number:"))
     if number == numberguess:
       print("Correct!")
       print("You guessed the number in", guesscount, "tries")
-      guesscount = 0
+      streakcount += 1
+      streakguess += guesscount
+      if streakcount == 3:
+        if streakguess <= 1536:
+          print("Streak!")
+        else:
+          print("No Streak!")
+        streakguess = 0
+        streakcount = 0
+      guesscount = 1
       number = randint(1, 100000000)
       if dev == 1:
         print(number)
@@ -264,14 +354,26 @@ if choice == "C":
     if start == 1:
       devx = int(input("X: "))
       devy = int(input("Y: "))
+      streakamount = int(input("Streak: "))
       number = randint(devx, devy)
       print("Custom Mode is between", devx, "and", devy)
+      if dev == 1:
+        print(number)
       start = 0
     numberguess = int(input("Number:"))
     if number == numberguess:
       print("Correct!")
       print("You guessed the number in", guesscount, "tries")
-      guesscount = 0
+      streakcount += 1
+      streakguess += guesscount
+      if streakcount == 3:
+        if streakguess <= streakamount:
+          print("Streak!")
+        else:
+          print("No Streak!")
+        streakguess = 0
+        streakcount = 0
+      guesscount = 1
       number = randint(devx, devy)
       if dev == 1:
         print(number)
