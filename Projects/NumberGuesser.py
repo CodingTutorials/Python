@@ -16,7 +16,7 @@ streak1 = 0
 streak2 = 0
 streak3 = 0
 # Prints All Numbers (Change to dev = 1 to enable)
-dev = 0
+dev = 1
 
 # Code
 if start == 1:
@@ -63,11 +63,11 @@ if choice == "E":
       streakcount += 1
       streakguess += guesscount
       if streakcount == 1:
-        streak1 = streakguess
+        streak1 = guesscount
       if streakcount == 2:
-        streak2 = streakguess
+        streak2 = guesscount
       if streakcount == 3:
-        streak3 = streakguess
+        streak3 = guesscount
         if streak1 <= 3 and streak2 <= 3 and streak3 <= 3:
           print("Streak!")
         else:
@@ -109,11 +109,11 @@ if choice == "M":
       streakcount += 1
       streakguess += guesscount
       if streakcount == 1:
-        streak1 = streakguess
+        streak1 = guesscount
       if streakcount == 2:
-        streak2 = streakguess
+        streak2 = guesscount
       if streakcount == 3:
-        streak3 = streakguess
+        streak3 = guesscount
         if streak1 <= 8 and streak2 <= 8 and streak3 <= 8:
           print("Streak!")
         else:
@@ -155,11 +155,11 @@ if choice == "H":
       streakcount += 1
       streakguess += guesscount
       if streakcount == 1:
-        streak1 = streakguess
+        streak1 = guesscount
       if streakcount == 2:
-        streak2 = streakguess
+        streak2 = guesscount
       if streakcount == 3:
-        streak3 = streakguess
+        streak3 = guesscount
         if streak1 <= 16 and streak2 <= 16 and streak3 <= 16:
           print("Streak!")
         else:
@@ -201,11 +201,11 @@ if choice == "VH":
       streakcount += 1
       streakguess += guesscount
       if streakcount == 1:
-        streak1 = streakguess
+        streak1 = guesscount
       if streakcount == 2:
-        streak2 = streakguess
+        streak2 = guesscount
       if streakcount == 3:
-        streak3 = streakguess
+        streak3 = guesscount
         if streak1 <= 32 and streak2 <= 32 and streak3 <= 32:
           print("Streak!")
         else:
@@ -246,11 +246,11 @@ if choice == "EX":
       streakcount += 1
       streakguess += guesscount
       if streakcount == 1:
-        streak1 = streakguess
+        streak1 = guesscount
       if streakcount == 2:
-        streak2 = streakguess
+        streak2 = guesscount
       if streakcount == 3:
-        streak3 = streakguess
+        streak3 = guesscount
         if streak1 <= 64 and streak2 <= 64 and streak3 <= 64:
           print("Streak!")
         else:
@@ -292,11 +292,11 @@ if choice == "I":
       streakcount += 1
       streakguess += guesscount
       if streakcount == 1:
-        streak1 = streakguess
+        streak1 = guesscount
       if streakcount == 2:
-        streak2 = streakguess
+        streak2 = guesscount
       if streakcount == 3:
-        streak3 = streakguess
+        streak3 = guesscount
         if streak1 <= 128 and streak2 <= 128 and streak3 <= 128:
           print("Streak!")
         else:
@@ -338,11 +338,11 @@ if choice == "I2":
       streakcount += 1
       streakguess += guesscount
       if streakcount == 1:
-        streak1 = streakguess
+        streak1 = guesscount
       if streakcount == 2:
-        streak2 = streakguess
+        streak2 = guesscount
       if streakcount == 3:
-        streak3 = streakguess
+        streak3 = guesscount
         if streak1 <= 256 and streak2 <= 256 and streak3 <= 256:
           print("Streak!")
         else:
@@ -384,11 +384,11 @@ if choice == "I3":
       streakcount += 1
       streakguess += guesscount
       if streakcount == 1:
-        streak1 = streakguess
+        streak1 = guesscount
       if streakcount == 2:
-        streak2 = streakguess
+        streak2 = guesscount
       if streakcount == 3:
-        streak3 = streakguess
+        streak3 = guesscount
         if streak1 <= 512 and streak2 <= 512 and streak3 <= 512:
           print("Streak!")
         else:
@@ -434,11 +434,11 @@ if choice == "C":
       streakcount += 1
       streakguess += guesscount
       if streakcount == 1:
-        streak1 = streakguess
+        streak1 = guesscount
       if streakcount == 2:
-        streak2 = streakguess
+        streak2 = guesscount
       if streakcount == 3:
-        streak3 = streakguess
+        streak3 = guesscount
         if streak1 <= streakamount and streak2 <= streakamount and streak3 <= streakamount:
           print("Streak!")
         else:
