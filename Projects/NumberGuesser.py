@@ -272,9 +272,6 @@ if choice == "C":
       print("Correct!")
       print("You guessed the number in", guesscount, "tries")
       guesscount = 0
-      devx = int(input("X: "))
-      devy = int(input("Y: "))
-      print("Custom Mode is between", devx, "and", devy)
       number = randint(devx, devy)
       if dev == 1:
         print(number)
