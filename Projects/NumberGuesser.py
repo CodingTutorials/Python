@@ -16,7 +16,7 @@ streak1 = 0
 streak2 = 0
 streak3 = 0
 # Prints All Numbers (Change to dev = 1 to enable)
-dev = 0
+dev = 1
 
 # Code
 if start == 1:
@@ -62,6 +62,8 @@ if choice == "E":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streak1 > 3 or streak2 > 3 or streak3 > 3:
+        streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
       if streakcount == 2:
@@ -108,6 +110,8 @@ if choice == "M":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streak1 > 8 or streak2 > 8 or streak3 > 8:
+        streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
       if streakcount == 2:
@@ -154,6 +158,8 @@ if choice == "H":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streak1 > 16 or streak2 > 16 or streak3 > 16:
+        streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
       if streakcount == 2:
@@ -200,6 +206,8 @@ if choice == "VH":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streak1 > 32 or streak2 > 32 or streak3 > 32:
+        streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
       if streakcount == 2:
@@ -245,6 +253,8 @@ if choice == "EX":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streak1 > 64 or streak2 > 64 or streak3 > 64:
+        streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
       if streakcount == 2:
@@ -291,6 +301,8 @@ if choice == "I":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streak1 > 128 or streak2 > 128 or streak3 > 128:
+        streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
       if streakcount == 2:
@@ -337,6 +349,8 @@ if choice == "I2":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streak1 > 256 or streak2 > 256 or streak3 > 256:
+        streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
       if streakcount == 2:
@@ -383,6 +397,8 @@ if choice == "I3":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streak1 > 512 or streak2 > 512 or streak3 > 512:
+        streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
       if streakcount == 2:
@@ -433,6 +449,8 @@ if choice == "C":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
+      if streak1 > streakamount or streak2 > streakamount or streak3 > streakamount:
+        streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
       if streakcount == 2:
