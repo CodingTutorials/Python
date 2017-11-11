@@ -49,7 +49,7 @@ if choice == "E":
   while pasw == 1:
     if start == 1:
       number = randint(1, 10)
-      print("Easy Mode is between 1 and 10")
+      print("Easy Mode is |between 1 and 10| and |has a streak of 8|")
       if dev == 1:
         print(number)
       start = 0
@@ -87,7 +87,7 @@ if choice == "M":
   while pasw == 1:
     if start == 1:
       number = randint(1, 100)
-      print("Medium Mode is between 1 and 100")
+      print("Medium Mode is |between 1 and 100| and |has a streak of 24|")
       if dev == 1:
         print(number)
       start = 0
@@ -125,7 +125,7 @@ if choice == "H":
   while pasw == 1:
     if start == 1:
       number = randint(1, 1000)
-      print("Hard Mode is between 1 and 1000")
+      print("Hard Mode is |between 1 and 1000| and |has a streak of 48|")
       if dev == 1:
         print(number)
       start = 0
@@ -163,7 +163,7 @@ if choice == "VH":
   while pasw == 1:
     if start == 1:
       number = randint(1, 10000)
-      print("VeryHard Mode is between 1 and 10000")
+      print("VeryHard Mode is |between 1 and 10000| and |has a streak of 96|")
       if dev == 1:
         print(number)
       start = 0
@@ -200,7 +200,7 @@ if choice == "EX":
   while pasw == 1:
     if start == 1:
       number = randint(1, 100000)
-      print("Extreme Mode is between 1 and 100000")
+      print("Extreme Mode is |between 1 and 100000| and |has a streak of 192|")
       if dev == 1:
         print(number)
       start = 0
@@ -238,7 +238,7 @@ if choice == "I":
   while pasw == 1:
     if start == 1:
       number = randint(1, 1000000)
-      print("Impossible Mode is between 1 and 1000000")
+      print("Impossible Mode is |between 1 and 1000000| and |has a streak of 384|")
       if dev == 1:
         print(number)
       start = 0
@@ -276,7 +276,7 @@ if choice == "I2":
   while pasw == 1:
     if start == 1:
       number = randint(1, 10000000)
-      print("Impossible2 Mode is between 1 and 10000000")
+      print("Impossible2 Mode is |between 1 and 10000000| and |has a streak of 768|")
       if dev == 1:
         print(number)
       start = 0
@@ -314,7 +314,7 @@ if choice == "I3":
   while pasw == 1:
     if start == 1:
       number = randint(1, 100000000)
-      print("Impossible3 Mode is between 1 and 100000000")
+      print("Impossible3 Mode is |between 1 and 100000000| and |has a streak of 1536|")
       if dev == 1:
         print(number)
       start = 0
@@ -356,7 +356,7 @@ if choice == "C":
       devy = int(input("Y: "))
       streakamount = int(input("Streak: "))
       number = randint(devx, devy)
-      print("Custom Mode is between", devx, "and", devy)
+      print("Custom Mode is |between ", devx, " and ", devy,"| and |has a streak of ", streakamount,"|", sep='')
       if dev == 1:
         print(number)
       start = 0
