@@ -15,7 +15,12 @@ dev = 0
 
 # Code
 if start == 1:
-  text = "Welcome to Password Guesser!"
+  text = "Welcome to Password Guesser"
+  for character in text:
+    sys.stdout.write(character)
+    sleep(0.2)
+  print("\n")
+  text = "Created by Nathan R (Mosrod)"
   for character in text:
     sys.stdout.write(character)
     sleep(0.2)
