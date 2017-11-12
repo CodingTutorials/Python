@@ -411,10 +411,10 @@ while run == 1:
     print(dig1,dig2,dig3,dig4,dig5,dig6, sep='')
   
   elif length == 7:
-    rint(dig1,dig2,dig3,dig4,dig5,dig6,dig7, sep='')
+    print(dig1,dig2,dig3,dig4,dig5,dig6,dig7, sep='')
     
   elif length == 8:
-    rint(dig1,dig2,dig3,dig4,dig5,dig6,dig7,dig8, sep='')
+    print(dig1,dig2,dig3,dig4,dig5,dig6,dig7,dig8, sep='')
     
   elif length == 9:
     print(dig1,dig2,dig3,dig4,dig5,dig6,dig7,dig8,dig9, sep='')
