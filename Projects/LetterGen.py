@@ -401,7 +401,7 @@ while run == 1:
       print("C")
       
       
-  if length == 1:
+  if length <= 1:
     print(dig1, sep='')
     
   elif length == 2:
@@ -425,5 +425,5 @@ while run == 1:
   elif length == 8:
     print(dig1,dig2,dig3,dig4,dig5,dig6,dig7,dig8, sep='')
     
-  elif length == 9:
+  elif length >= 9:
     print(dig1,dig2,dig3,dig4,dig5,dig6,dig7,dig8,dig9, sep='')
