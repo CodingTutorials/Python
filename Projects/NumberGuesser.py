@@ -23,17 +23,17 @@ if start == 1:
   text = "Welcome to Number Guesser"
   for character in text:
     sys.stdout.write(character)
-    sleep(0.2)
+    sleep(0.15)
   print("\n")
   text = "Created by Nathan R (Mosrod)"
   for character in text:
     sys.stdout.write(character)
-    sleep(0.15)
+    sleep(0.1)
   print("\n")
   text = "|Easy|Medium|Hard|VeryHard|Extreme|Impossible|Impossible2|Impossible3|Custom|Learn|"
   for character in text:
     sys.stdout.write(character)
-    sleep(0.05)
+    sleep(0.03)
   print("\n")
 if dev == 1:
   text = "You are a developer!"
@@ -148,7 +148,7 @@ if choice == "H":
   while pasw == 1:
     if start == 1:
       number = randint(1, 1000)
-      print("Hard Mode is |between 1 and 1000| and |has a streak of 16|")
+      print("Hard Mode is |between 1 and 1000| and |has a streak of 12|")
       if dev == 1:
         print(number)
       start = 0
@@ -158,7 +158,7 @@ if choice == "H":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
-      if streak1 > 16 or streak2 > 16 or streak3 > 16:
+      if streak1 > 12 or streak2 > 12 or streak3 > 12:
         streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
@@ -166,7 +166,7 @@ if choice == "H":
         streak2 = guesscount
       if streakcount == 3:
         streak3 = guesscount
-        if streak1 <= 16 and streak2 <= 16 and streak3 <= 16:
+        if streak1 <= 12 and streak2 <= 12 and streak3 <= 12:
           print("Streak!")
         else:
           print("No Streak!")
