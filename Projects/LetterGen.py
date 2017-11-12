@@ -390,3 +390,31 @@ while run == 1:
     elif dig9 == 9:
       dig9 = "C"
       print("C")
+      
+      
+  if length = 1:
+    print(dig1, sep='')
+    
+  elif length = 2:
+    print(dig1,dig2, sep='')  
+    
+  elif length = 3:
+    print(dig1,dig2,dig3, sep='')
+    
+  elif length = 4:
+    print(dig1,dig2,dig3,dig4, sep='')
+  
+  elif length = 5:
+    print(dig1,dig2,dig3,dig4,dig5, sep='')  
+  
+  elif length = 6:
+    print(dig1,dig2,dig3,dig4,dig5,dig6, sep='')
+  
+  elif length = 7:
+    rint(dig1,dig2,dig3,dig4,dig5,dig6,dig7, sep='')
+    
+  elif length = 8:
+    rint(dig1,dig2,dig3,dig4,dig5,dig6,dig7,dig8, sep='')
+    
+  elif length == 9:
+    print(dig1,dig2,dig3,dig4,dig5,dig6,dig7,dig8,dig9, sep='')
