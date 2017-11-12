@@ -1,4 +1,13 @@
 run = 1
+dig1 = 0
+dig2 = 0
+dig3 = 0
+dig4 = 0
+dig5 = 0
+dig6 = 0
+dig7 = 0
+dig8 = 0
+dig9 = 0
 
 while run == 1:
   password = int(input("Password: "))
