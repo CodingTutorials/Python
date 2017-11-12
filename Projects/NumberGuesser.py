@@ -387,7 +387,7 @@ if choice == "I3":
   while pasw == 1:
     if start == 1:
       number = randint(1, 100000000)
-      print("Impossible3 Mode is |between 1 and 100000000| and |has a streak of 512|")
+      print("Impossible3 Mode is |between 1 and 100000000| and |has a streak of 34|")
       if dev == 1:
         print(number)
       start = 0
@@ -397,7 +397,7 @@ if choice == "I3":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
-      if streak1 > 512 or streak2 > 512 or streak3 > 512:
+      if streak1 > 34 or streak2 > 34 or streak3 > 34:
         streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
@@ -405,7 +405,7 @@ if choice == "I3":
         streak2 = guesscount
       if streakcount == 3:
         streak3 = guesscount
-        if streak1 <= 512 and streak2 <= 512 and streak3 <= 512:
+        if streak1 <= 34 and streak2 <= 34 and streak3 <= 34:
           print("Streak!")
         else:
           print("No Streak!")
