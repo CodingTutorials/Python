@@ -196,7 +196,7 @@ if choice == "VH":
   while pasw == 1:
     if start == 1:
       number = randint(1, 10000)
-      print("VeryHard Mode is |between 1 and 10000| and |has a streak of 32|")
+      print("VeryHard Mode is |between 1 and 10000| and |has a streak of 16|")
       if dev == 1:
         print(number)
       start = 0
@@ -206,7 +206,7 @@ if choice == "VH":
       print("You guessed the number in", guesscount, "tries")
       streakcount += 1
       streakguess += guesscount
-      if streak1 > 32 or streak2 > 32 or streak3 > 32:
+      if streak1 > 16 or streak2 > 16 or streak3 > 16:
         streakcount = 1
       if streakcount == 1:
         streak1 = guesscount
@@ -214,7 +214,7 @@ if choice == "VH":
         streak2 = guesscount
       if streakcount == 3:
         streak3 = guesscount
-        if streak1 <= 32 and streak2 <= 32 and streak3 <= 32:
+        if streak1 <= 16 and streak2 <= 16 and streak3 <= 16:
           print("Streak!")
         else:
           print("No Streak!")
