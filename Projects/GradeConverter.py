@@ -57,12 +57,12 @@ def checker():
 text = "Welcome to Grade Converter"
 for character in text:
   sys.stdout.write(character)
-  sleep(0.05)
+  sleep(0.1)
 print("\n")
 text = "Created by Nathan R (Mosrod)"
 for character in text:
   sys.stdout.write(character)
-  sleep(0.03)
+  sleep(0.05)
 print("\n")
 
 while ask == 1:
