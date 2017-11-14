@@ -1,8 +1,17 @@
 # Grade Converter
-# http://cs.smith.edu/~jorourke/Grading.html
+# Created by Nathan R (Mosrod) https://github.com/Mosrod
+# Grading based on http://cs.smith.edu/~jorourke/Grading.html
+
+# Imports
+from time import sleep
+import sys
+
+# Variables
+ask = 1
+
+# Definitions
 
 # Checker
-
 def checker():
   
   if Score >= 97.5:
@@ -44,9 +53,17 @@ def checker():
   elif Score < 60.0:
     print("F")
 
-# End Of Checker
-
-ask = 1
+# Code
+text = "Welcome to Grade Converter"
+for character in text:
+  sys.stdout.write(character)
+  sleep(0.1)
+print("\n")
+text = "Created by Nathan R (Mosrod)"
+for character in text:
+  sys.stdout.write(character)
+  sleep(0.05)
+print("\n")
 
 while ask == 1:
   Choice = input("Fraction/Percent [F/P]:")
