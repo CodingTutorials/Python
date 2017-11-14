@@ -1,3 +1,6 @@
+# Number Guesser
+# Created by Nathan R (Mosrod) https://github.com/Mosrod
+
 # Imports
 from random import *
 from time import sleep
