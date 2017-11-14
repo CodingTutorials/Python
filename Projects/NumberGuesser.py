@@ -23,17 +23,17 @@ if start == 1:
   text = "Welcome to Number Guesser"
   for character in text:
     sys.stdout.write(character)
-    sleep(0.15)
+    sleep(0.1)
   print("\n")
   text = "Created by Nathan R (Mosrod)"
   for character in text:
     sys.stdout.write(character)
-    sleep(0.1)
+    sleep(0.05)
   print("\n")
   text = "|Easy|Medium|Hard|VeryHard|Extreme|Impossible|Impossible2|Impossible3|Custom|Learn|"
   for character in text:
     sys.stdout.write(character)
-    sleep(0.03)
+    sleep(0.02)
   print("\n")
 if dev == 1:
   text = "You are a developer!"
