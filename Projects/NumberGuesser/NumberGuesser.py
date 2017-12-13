@@ -18,8 +18,9 @@ streakguess = 0
 streak1 = 0
 streak2 = 0
 streak3 = 0
+streak = 0
 # Prints All Numbers (Change to dev = 1 to enable)
-dev = 0
+dev = 1
 
 # Code
 if start == 1:
@@ -74,19 +75,34 @@ if choice == "E":
       if streakcount == 3:
         streak3 = guesscount
         if streak1 <= 3 and streak2 <= 3 and streak3 <= 3:
-          print("Streak!")
+          streak += 1
+          print("Streak ", streak, "!", sep='')
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
         else:
           print("No Streak!")
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
+          streak = 0
+      if streak1 > 3 or streak2 > 3 or streak3 > 3:
         streak1 = 0
         streak2 = 0
         streak3 = 0
         streakguess = 0
         streakcount = 0
+        streak = 0
       guesscount = 1
       number = randint(1, 10)
       if dev == 1:
         print(number)
       pasw = 1
+      
     elif number > numberguess:
       print("More")
       guesscount += 1
@@ -122,14 +138,28 @@ if choice == "M":
       if streakcount == 3:
         streak3 = guesscount
         if streak1 <= 8 and streak2 <= 8 and streak3 <= 8:
-          print("Streak!")
+          streak += 1
+          print("Streak ", streak, "!", sep='')
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
         else:
           print("No Streak!")
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
+          streak = 0
+      if streak1 > 8 or streak2 > 8 or streak3 > 8:
         streak1 = 0
         streak2 = 0
         streak3 = 0
         streakguess = 0
         streakcount = 0
+        streak = 0
       guesscount = 1
       number = randint(1, 100)
       if dev == 1:
@@ -170,14 +200,28 @@ if choice == "H":
       if streakcount == 3:
         streak3 = guesscount
         if streak1 <= 12 and streak2 <= 12 and streak3 <= 12:
-          print("Streak!")
+          streak += 1
+          print("Streak ", streak, "!", sep='')
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
         else:
           print("No Streak!")
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
+          streak = 0
+      if streak1 > 12 or streak2 > 12 or streak3 > 12:
         streak1 = 0
         streak2 = 0
         streak3 = 0
         streakguess = 0
         streakcount = 0
+        streak = 0
       guesscount = 1
       number = randint(1, 1000)
       if dev == 1:
@@ -218,14 +262,28 @@ if choice == "VH":
       if streakcount == 3:
         streak3 = guesscount
         if streak1 <= 16 and streak2 <= 16 and streak3 <= 16:
-          print("Streak!")
+          streak += 1
+          print("Streak ", streak, "!", sep='')
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
         else:
           print("No Streak!")
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
+          streak = 0
+      if streak1 > 16 or streak2 > 16 or streak3 > 16:
         streak1 = 0
         streak2 = 0
         streak3 = 0
         streakguess = 0
         streakcount = 0
+        streak = 0
       guesscount = 1
       number = randint(1, 10000)
       if dev == 1:
@@ -265,14 +323,28 @@ if choice == "EX":
       if streakcount == 3:
         streak3 = guesscount
         if streak1 <= 20 and streak2 <= 20 and streak3 <= 20:
-          print("Streak!")
+          streak += 1
+          print("Streak ", streak, "!", sep='')
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
         else:
           print("No Streak!")
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
+          streak = 0
+      if streak1 > 20 or streak2 > 20 or streak3 > 20:
         streak1 = 0
         streak2 = 0
         streak3 = 0
         streakguess = 0
         streakcount = 0
+        streak = 0
       guesscount = 1
       number = randint(1, 100000)
       if dev == 1:
@@ -313,14 +385,28 @@ if choice == "I":
       if streakcount == 3:
         streak3 = guesscount
         if streak1 <= 24 and streak2 <= 24 and streak3 <= 24:
-          print("Streak!")
+          streak += 1
+          print("Streak ", streak, "!", sep='')
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
         else:
           print("No Streak!")
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
+          streak = 0
+      if streak1 > 24 or streak2 > 24 or streak3 > 24:
         streak1 = 0
         streak2 = 0
         streak3 = 0
         streakguess = 0
         streakcount = 0
+        streak = 0
       guesscount = 1
       number = randint(1, 1000000)
       if dev == 1:
@@ -361,14 +447,28 @@ if choice == "I2":
       if streakcount == 3:
         streak3 = guesscount
         if streak1 <= 28 and streak2 <= 28 and streak3 <= 28:
-          print("Streak!")
+          streak += 1
+          print("Streak ", streak, "!", sep='')
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
         else:
           print("No Streak!")
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
+          streak = 0
+      if streak1 > 28 or streak2 > 28 or streak3 > 28:
         streak1 = 0
         streak2 = 0
         streak3 = 0
         streakguess = 0
         streakcount = 0
+        streak = 0
       guesscount = 1
       number = randint(1, 10000000)
       if dev == 1:
@@ -409,14 +509,28 @@ if choice == "I3":
       if streakcount == 3:
         streak3 = guesscount
         if streak1 <= 34 and streak2 <= 34 and streak3 <= 34:
-          print("Streak!")
+         streak += 1
+         print("Streak ", streak, "!", sep='')
+         streak1 = 0
+         streak2 = 0
+         streak3 = 0
+         streakguess = 0
+         streakcount = 0
         else:
           print("No Streak!")
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
+          streak = 0
+      if streak1 > 34 or streak2 > 34 or streak3 > 34:
         streak1 = 0
         streak2 = 0
         streak3 = 0
         streakguess = 0
         streakcount = 0
+        streak = 0
       guesscount = 1
       number = randint(1, 100000000)
       if dev == 1:
@@ -461,14 +575,28 @@ if choice == "C":
       if streakcount == 3:
         streak3 = guesscount
         if streak1 <= streakamount and streak2 <= streakamount and streak3 <= streakamount:
-          print("Streak!")
+          streak += 1
+          print("Streak ", streak, "!", sep='')
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
         else:
           print("No Streak!")
+          streak1 = 0
+          streak2 = 0
+          streak3 = 0
+          streakguess = 0
+          streakcount = 0
+          streak = 0
+      if streak1 > streakamount or streak2 > streakamount or streak3 > streakamount:
         streak1 = 0
         streak2 = 0
         streak3 = 0
         streakguess = 0
         streakcount = 0
+        streak = 0
       guesscount = 1
       number = randint(devx, devy)
       if dev == 1:
