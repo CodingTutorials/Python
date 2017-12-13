@@ -20,7 +20,7 @@ streak2 = 0
 streak3 = 0
 streak = 0
 # Prints All Numbers (Change to dev = 1 to enable)
-dev = 1
+dev = 0
 
 # Code
 if start == 1:
