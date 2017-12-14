@@ -51,7 +51,7 @@ while diff == 1:
   diff = 0
 
 # Easy
-if choice == "E":
+if choice == "E" or choice == "e":
   diff = 0
   while pasw == 1:
     if start == 1:
@@ -114,7 +114,7 @@ if choice == "E":
       pasw = 1
 
 # Medium
-if choice == "M":
+if choice == "M" or choice == "m":
   diff = 0
   while pasw == 1:
     if start == 1:
@@ -176,7 +176,7 @@ if choice == "M":
       pasw = 1
 
 # Hard
-if choice == "H":
+if choice == "H" or choice == "h":
   diff = 0
   while pasw == 1:
     if start == 1:
@@ -238,7 +238,7 @@ if choice == "H":
       pasw = 1      
 
 # VeryHard
-if choice == "VH":
+if choice == "VH" or choice == "vh" or choice == "Vh" or choice == "vH":
   diff = 0
   while pasw == 1:
     if start == 1:
@@ -299,7 +299,7 @@ if choice == "VH":
       print("Wrong!")
       pasw = 1
 # Extreme
-if choice == "EX":
+if choice == "EX" or choice == "ex" or choice == "Ex" or choice == "eX":
   diff = 0
   while pasw == 1:
     if start == 1:
@@ -361,7 +361,7 @@ if choice == "EX":
       pasw = 1
       
 # Impossible
-if choice == "I":
+if choice == "I" or choice == "i":
   diff = 0
   while pasw == 1:
     if start == 1:
@@ -423,7 +423,7 @@ if choice == "I":
       pasw = 1
 
 # Impossible 2
-if choice == "I2":
+if choice == "I2" or choice == "i2":
   diff = 0
   while pasw == 1:
     if start == 1:
@@ -485,7 +485,7 @@ if choice == "I2":
       pasw = 1
       
 # Impossible 3
-if choice == "I3":
+if choice == "I3" or choice == "i3":
   diff = 0
   while pasw == 1:
     if start == 1:
@@ -548,7 +548,7 @@ if choice == "I3":
 
 
 # Custom
-if choice == "C":
+if choice == "C" or choice == "c":
   diff = 0
   while pasw == 1:
     if start == 1:
@@ -613,7 +613,7 @@ if choice == "C":
       pasw = 1
 
 # Learn
-if choice == "L":
+if choice == "L" or choice == "l":
   diff = 0
   while pasw == 1:
     if start == 1:
