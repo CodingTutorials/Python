@@ -16,3 +16,21 @@ message = "hello's world"  # Correct
 
 # Invalid: "he said "welcome!""
 message = 'he said "welcome!"'  # Correct
+
+# You can also use the backslash character to ignore quotes
+message = 'mary\'s ice cream'
+message = "she exclaimed \"good\" morning"
+
+# Use three double quotes for a multiline string
+message = """ hello
+line1
+line2
+line3
+...
+"""
+print(message)
+
+# Different avaliable functions for strings
+
+# | Length |
+a = len("hello") # a = 5
